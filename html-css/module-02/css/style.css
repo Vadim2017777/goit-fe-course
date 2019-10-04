@@ -1,0 +1,50 @@
+* {
+  outline: 1px solid red;
+}
+
+body {
+  font-family: "Playfair Display", serif;
+  font-size: 14px;
+  line-height: 24px;
+  color: #626262;
+}
+
+img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.container {
+  width: 900px;
+  /* vertical-align: top; */
+  margin: auto;
+  
+}
+
+.menu {
+  padding: 0;
+  padding-top: 72px;
+  padding-left: 160px;
+  margin: 0;
+  font-size: 0;
+}
+
+.menu-item {
+  display: inline-block;
+  list-style-type: none;
+  vertical-align: top;
+  
+  
+}
+.menu-item:not(:last-child){
+    margin-right: 100px;
+}
+
+.menu-link {
+    display: block;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+
+}
