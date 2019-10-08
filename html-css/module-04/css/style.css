@@ -1,6 +1,6 @@
-/* * {
+* {
   outline: 1px solid red;
-} */
+}
 
 html {
   box-sizing: border-box;
@@ -46,7 +46,7 @@ img {
 .menu {
   float: right;
   padding: 0;
-  margin: 40px 0 0 0;
+  margin: 40px 0 110px 0;
 }
 
 .menu-item {
@@ -62,9 +62,40 @@ img {
   font-family: "Open Sans", sans-serif;
   font-weight: 600;
   text-transform: uppercase;
-  color: #000000;
+  color: #000000; /* 2pxside */
 }
 
-.menu-link:hover{
-    color: #1abc9c;
+
+
+  
+
+.menu-link:hover {
+  color: #1abc9c;
+}
+
+
+
+
+.gallery-title {
+  display: block;
+  text-align: center;
+  font-size: 48px;
+  line-height: 32px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  color: rgb(81, 81, 81);
+  text-transform: uppercase;
+  margin: 0;
+  float: none;
+
+  /* 8px side */
+}
+
+.gallery-title::after {
+  display: block;
+  background-color: #1abc9c;
+  margin: 30px auto 0;
+  width: 164px;
+  height: 7px;
+  content: "";
 }

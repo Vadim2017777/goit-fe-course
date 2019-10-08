@@ -11,6 +11,7 @@ html {
   box-sizing: inherit;
 }
 body {
+  counter-reset: v;
   font-family: "Playfair Display", serif;
   font-size: 14px;
   line-height: 24px;
@@ -43,8 +44,6 @@ img {
   vertical-align: top;
 }
 
-
-
 .menu-item:not(:last-child) {
   margin-right: 100px;
 }
@@ -57,7 +56,7 @@ img {
   color: #626262;
 }
 
-.menu-link:hover{
+.menu-link:hover {
   color: #03a9f4;
 }
 /* MAIN */
@@ -82,7 +81,9 @@ img {
   margin-right: 0px;
 }
 
-.menu-item-card:nth-last-child(-n + 2) {
+.menu-item-card:nth-last-child(1) {
+  /*{-0-2=2 -1-2=1 -2+2=0 */
+
   margin-bottom: 0px;
 }
 
@@ -125,4 +126,14 @@ img {
   font-size: 20px;
   line-height: 24px;
   color: #626262;
+}
+
+h4 {
+  text-indent: 2rem;
+  counter-increment: v;
+}
+h4::after {
+  content: counter(v);
+  color: red;
+  font-size: 30px;
 }
