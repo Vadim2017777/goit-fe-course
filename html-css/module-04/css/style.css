@@ -1,0 +1,70 @@
+/* * {
+  outline: 1px solid red;
+} */
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before *::after {
+  box-sizing: inherit;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.container {
+  width: 900px;
+  margin: auto;
+}
+
+.logo-mart {
+  float: left;
+  margin: 26px 0 0 0;
+  font-size: 30px;
+  line-height: 32px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  text-transform: uppercase;
+  color: #555252;
+}
+
+.logo-mart::first-letter {
+  color: #1abc9c;
+}
+
+.menu {
+  float: right;
+  padding: 0;
+  margin: 40px 0 0 0;
+}
+
+.menu-item {
+  list-style: none;
+  float: left;
+  margin-right: 34px;
+}
+
+.menu-link {
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 11px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.menu-link:hover{
+    color: #1abc9c;
+}
