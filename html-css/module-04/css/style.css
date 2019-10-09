@@ -80,12 +80,12 @@ img {
   display: block;
   text-align: center;
   font-size: 48px;
-  line-height: 32px;
+  line-height: 32px; /*line-height<font-size???*/
   font-family: "Roboto", sans-serif;
   font-weight: 600;
   color: rgb(81, 81, 81);
   text-transform: uppercase;
-  margin: 0;
+  margin: 0 0 90px;
   float: none;
 
   /* 8px side */
@@ -98,4 +98,21 @@ img {
   width: 164px;
   height: 7px;
   content: "";
+}
+
+
+.menu-featured{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+
+
+.menu-featured-item{
+height: 320px;
+width: 255px;
+margin: 0;
+padding: 0;
+
 }
