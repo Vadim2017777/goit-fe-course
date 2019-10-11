@@ -1,5 +1,6 @@
-* {
-  outline: 1px solid red;
+html,
+body {
+  font-size: 14px;
 }
 
 html {
@@ -31,7 +32,7 @@ img {
 .logo-mart {
   float: left;
   margin: 26px 0 0 0;
-  font-size: 30px;
+  font-size: 2.14rem;
   line-height: 32px;
   font-family: "Roboto", sans-serif;
   font-weight: 300;
@@ -61,12 +62,12 @@ img {
 
 .menu-link {
   text-decoration: none;
-  font-size: 14px;
+  font-size: 1rem;
   line-height: 11px;
   font-family: "Open Sans", sans-serif;
   font-weight: 600;
   text-transform: uppercase;
-  color: #000000; /* 2pxside */
+  color: #000000;
 }
 
 .menu-link:hover {
@@ -80,7 +81,7 @@ img {
 .section-title {
   display: block;
   text-align: center;
-  font-size: 48px;
+  font-size: 3.42rem;
   line-height: 32px; /*line-height<font-size???*/
   font-family: "Roboto", sans-serif;
   font-weight: 600;
@@ -97,6 +98,7 @@ img {
   height: 7px;
   content: "";
 }
+
 .section-featured-title-container {
   margin-bottom: 90px;
 }
@@ -114,7 +116,7 @@ img {
   margin: 0 30px 30px 0;
   padding: 0;
   font-family: "Roboto", sans-serif;
-  font-size: 18px;
+  font-size: 1.28rem;
   font-weight: 900;
   line-height: 32px;
   text-transform: uppercase;
@@ -159,7 +161,6 @@ img {
 
 .section-news-title-container {
   margin-bottom: 80px;
-  /* 8px side */
 }
 
 .menu-news {
@@ -174,7 +175,7 @@ img {
   float: left;
 }
 
-.menu-news-item:nth-child(3n){
+.menu-news-item:nth-child(3n) {
   margin-right: 0;
 }
 .news-image {
@@ -186,7 +187,7 @@ img {
   margin: 0;
   font-family: "Open Sans", sans-serif;
   font-weight: 600;
-  font-size: 18px;
+  font-size: 1.28rem;
   line-height: 26px; /*4px-side*/
   color: #555252;
 }
@@ -196,7 +197,7 @@ img {
   margin: 0 0 12px 0;
   font-family: "Open Sans", sans-serif;
   font-weight: normal;
-  font-size: 14px;
+  font-size: 1rem;
   line-height: 26px; /*6px-side*/
   color: #555252;
 }
@@ -217,10 +218,8 @@ img {
   background-color: rgb(78, 198, 171);
   font-family: "Open Sans", sans-serif;
   font-weight: 300;
-  font-size: 16px;
+  font-size: 1.14rem;
   line-height: 26px; /*5side */
   color: #ffffff;
   border-color: #ffffff;
 }
-
-
