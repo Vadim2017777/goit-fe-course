@@ -1,11 +1,3 @@
-<<<<<<< HEAD
-
-=======
-html,
-body {
-  font-size: 14px;
-}
->>>>>>> 367522ed01bb89217d0fa5ec3eb3f76282233b93
 
 html {
   box-sizing: border-box;
@@ -141,11 +133,11 @@ img {
 }
 
 
-.futured-image{
+ .futured-image{
   filter: brightness(90%);
 }
 
-.futured-image:hover{
+.menu-featured-item:hover .futured-image{
   filter: brightness(100%);
 }
 
@@ -207,7 +199,7 @@ img {
   margin-bottom: 10px;
   filter: sepia(1);
 }
-.news-image:hover {
+.menu-news-item:hover .news-image {
   filter: sepia(0);
 }
 .news-item {
