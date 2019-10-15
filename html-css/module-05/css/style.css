@@ -58,7 +58,7 @@ img {
 .menu-item {
   list-style: none;
   float: left;
-  margin-right: 34px;
+  padding-right: 34px;
 }
 
 .menu-link {
@@ -75,41 +75,57 @@ img {
   color: #1abc9c;
 }
 
-.slider {
+
+img {
+
   position: relative;
+    width:100%;
+  }
+
+.slider {
+  display: inline-block;
+  position: absolute;
+
+  
 }
 
+
+
+
 .slider-cntrl {
-  position: relative;
+  position: absolute;
   border: none;
   display: inline-block;
   width: 104px;
   height: 104px;
   background-color: #4ec6ab;
   opacity: 0.651;
+  top: 50%;
+  
 }
-  .left-arrow{
-    display: inline-block;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translateX(-50%) translateY(-50%);
-  }
 
-
+.slider-cntrl-prev{
+left: 0;
 }
-. {
-  font-size: 100px;
-  font-family: "Pe";
-  color: rgb(255, 255, 255);
-  text-transform: uppercase;
-  line-height: 0.11;
-  text-align: right;
-  position: absolute;
-  left: 232.937px;
-  top: 343.237px;
+
+.slider-cntrl-next{
+  right: 0;
+}
+.slider-cntrl::after {
+  display: inline-block;
   width: 22px;
   height: 38px;
-  z-index: 80;
+  opacity: 0.651;
+  content: '';
 }
+
+.slider-cntrl-prev::after{
+background-image: url(/module-05/images/slider/arrow-left.png);
+}
+
+.slider-cntrl-next::after{
+  background-image: url(/module-05/images/slider/arrow-right.png);
+ 
+}
+
 
