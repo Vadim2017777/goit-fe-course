@@ -1,4 +1,8 @@
-html body {
+*{
+  outline: 1px solid red;
+}
+html,
+body {
   font-size: 14px;
 }
 
@@ -51,7 +55,6 @@ img {
   float: right;
   padding: 0;
   margin: 0;
-  vertical-align: middle;
 }
 
 .menu-item {
@@ -76,56 +79,199 @@ img {
 
 .banner {
   position: absolute;
-   display: inline-block;
-  background-image: url(/module-05/images/slider/slide4.jpg);
+  display: inline-block;
+  background-image: url(/images/slider/slide4.jpg);
   min-height: 600px;
   width: 100%;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
-
-
-
-
-.slider{
-  margin: auto;
+                                                          /*SLIDER */
+.slider {
+  margin: 0 auto 94px auto;
   position: relative;
   height: 600px;
-  
 }
 
-
-
-.slider-cntrl{
+.slider-cntrl {
   position: absolute;
-  border:none;
+  border: none;
   width: 104px;
   height: 104px;
   opacity: 0.651;
-  top:50%;
-  z-index: 1;
-  
+  top: 50%;
+  /* z-index: 1; */
 }
 
-
-.slider-cntrl-prev{
-  background: url(/module-05/images/slider/arrow-left.jpg);
+.slider-cntrl-prev {
+  background: url(/images/slider/arrow-left.jpg);
   left: 0;
   transform: translateY(-50%);
-} 
-  
-.slider-cntrl-next{
-  background: url(/module-05/images/slider/arrow-right.jpg);
-  right:0;
+}
+
+.slider-cntrl-next {
+  background: url(/images/slider/arrow-right.jpg);
+  right: 0;
   transform: translateY(-50%);
 }
 
-.slides{
-  position: absolute;
+.slider-item {
   display: inline-block;
+  position: absolute;
+  top:206px;
+  left:184px;
+  width: 764px;
+}
+
+.slider-text-main {
+  display: inline-block;
+  margin: 0 0 0 0;
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-size: 4.28rem;
+  line-height: 82px;
+  color: white;
+}
+
+.slider-text-choice{
+  display: inline-block;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 1.71rem;
+  line-height: 54px;
+  color: white; 
+}
+
+                                              /* SECTION NEW COLLECTION */
+.new-products{
+  margin-bottom:96px;
+}
+
+.section-title {
+  display: block;
+  text-align: center;
+  font-size: 3.42rem;
+  line-height: 58px; 
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  color: rgb(81, 81, 81);
+  text-transform: uppercase;
+  margin:0;
+}
+
+.section-title::after {
+  display: block;
+  background-color: #1abc9c;
+  margin: 30px auto 0;
+  width: 164px;
+  height: 7px;
+  content: "";
+  margin-bottom: 80px;
+}
+                                            /* PRODUCT */
+ .menu-product {
+  list-style: none;
   padding: 0;
   margin: 0;
-  list-style: none;
- 
 }
+
+.menu-product-item {
+  position: relative;
+  float: left;
+  /* height: 320px; */
+  width: 255px;
+  margin: 0 30px 30px 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.28rem;
+  font-weight: 900;
+  line-height: 32px;
+  text-transform: uppercase;
+  color: #ffffff;
+  
+  
+}
+
+
+.overlay{
+  position: absolute;
+  display:none;
+  width:235px;
+  height:300px;
+  background: rgb(0%, 0%, 0%, 1);
+  border: 10px;
+  border-color: rgb(255, 255, 255);
+  border-style: solid;
+ 
+
+  }
+
+  .hart{
+    position: absolute;
+    top:90px;
+    left: 35px;
+  }
+  
+  .arrows{
+  position: absolute;
+  top:90px;
+  left: 94px;
+ 
+  }
+
+
+
+.menu-product-item:nth-child(4n) {
+  margin-right: 0;
+}
+
+.menu-product-item:nth-last-child(-n + 4) {
+  margin-bottom: 0;
+
+}
+
+
+
+/* .menu-product-item:hover .product-image {
+      opacity: 0.249;  } */
+      
+               
+
+
+  .menu-product-item:hover .overlay {
+   display: inline-block;
+}
+
+  
+
+ 
+.menu-product-item:hover .product-text {
+  background-color: rgb(26, 188, 156);
+}
+
+.menu-product-item:hover .product-price {
+  background-color: rgb(26, 188, 156);
+  opacity: 0.439;
+}
+
+.product-text {
+  float: left;
+  margin: 0;
+  width: 200px;
+  height: 38px;
+  text-indent: 1rem;
+  line-height: 40px;
+  background-color: #323232;
+}
+.product-price {
+  margin: 0;
+  height: 38px;
+  width: 55px;
+  float: left;
+  text-align: center;
+  line-height: 40px;
+  background-color: #8c8c8c;
+}
+
