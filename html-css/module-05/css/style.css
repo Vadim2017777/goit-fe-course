@@ -231,17 +231,17 @@ img {
 
 .hart {
   left: 44px;
-  background: url(/images/product-icons/hart.png);
+  background: url(images/Product/hart.png);
 }
 
 .arrows {
   left: 102px;
-  background: url(/images/product-icons/arrows.png);
+  background: url(images/Product/arrows.png);
 }
 
 .clock {
   left: 160px;
-  background: url(/images/product-icons/clock.png);
+  background: url(images/Product/clock.png);
 }
 
 .chart {
@@ -249,7 +249,7 @@ img {
   height: 50px;
   top: 148px;
   left: 44px;
-  background: url(./images/product-icons/add-to-cart.png);
+  background: url(images/Product/add-to-cart.png);
 }
 
 .menu-text {
