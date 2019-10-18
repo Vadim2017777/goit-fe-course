@@ -7,7 +7,7 @@
     <title>HomeWork5</title>
     <link
       rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600|Roboto:400,900&display=swap"
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600|Roboto:300,400,900&display=swap"
     />
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/style.css" />
@@ -15,7 +15,9 @@
   <body>
     <header>
       <nav class="navigation container clearfix">
-        <h1 class="logo-mart">Mart</h1>
+        <a class="logo-mart" href="#"
+          ><img src="images/logo/mart.png" alt="logo"
+        /></a>
         <ul class="menu">
           <li class="menu-item"><a href="#" class="menu-link">Home</a></li>
           <li class="menu-item"><a href="#" class="menu-link">About Us</a></li>
@@ -30,11 +32,99 @@
     </header>
 
     <main>
-      <div class="slider">
-        <img src="/module-05/images/slider/slide4.jpg" alt="Funny girls">
-        <button class="slider-cntrl slider-cntrl-prev"></button> 
+      <div class="slider-images"></div>
+      <div class="slider container">
+        <button class="slider-cntrl slider-cntrl-prev"></button>
         <button class="slider-cntrl slider-cntrl-next"></button>
+        <div class="slider-item">
+          <p class="slider-text-main">AFFORDABLE PARIS TOURS</p>
+          <p class="slider-text-choice">
+            CITY TOURS / TOUR TICKETS / TOUR GUIDES
+          </p>
+        </div>
       </div>
+
+      <section class="new-products container">
+        <h2 class="section-title ">new collection</h2>
+        <ul class="menu-product clearfix ">
+          <li class="menu-item-product">
+            <div class="menu-overlay"></div>
+            <button class="btn hart"></button>
+            <button class="btn arrows"></button>
+            <button class="btn clock"></button>
+            <button class="btn chart"></button>
+            <img
+              class="menu-image"
+              src="images/Product/product1.jpg"
+              alt="blue tshirt"
+              width="255"
+              height="282"
+            />
+            <p class="menu-text">Blue Tshirt</p>
+            <p class="menu-price">$26</p>
+          </li>
+
+          <li class="menu-item-product">
+            <div class="menu-overlay"></div>
+            <button class="btn hart"></button>
+            <button class="btn arrows"></button>
+            <button class="btn clock"></button>
+            <button class="btn chart"></button>
+            <img
+              class="menu-image "
+              src="images/Product/product2.jpg"
+              alt="woman shirt"
+              width="255"
+              height="282"
+            />
+            <p class="menu-text">woman shirt</p>
+            <p class="menu-price">$31</p>
+          </li>
+
+          <li class="menu-item-product">
+            <div class="menu-overlay"></div>
+            <button class="btn hart"></button>
+            <button class="btn arrows"></button>
+            <button class="btn clock"></button>
+            <button class="btn chart"></button>
+            <img
+              class="menu-image"
+              src="images/Product/product3.jpg"
+              alt="yellow tshirt"
+              width="255"
+              height="282"
+            />
+            <p class="menu-text">yellow tshirt</p>
+            <p class="menu-price">$21</p>
+          </li>
+
+          <li class="menu-item-product">
+            <div class="menu-overlay"></div>
+            <button class="btn hart"></button>
+            <button class="btn arrows"></button>
+            <button class="btn clock"></button>
+            <button class="btn chart"></button>
+            <img
+              class="menu-image"
+              src="images/Product/product4.jpg"
+              alt="velvet dress"
+              width="255"
+              height="282"
+            />
+            <p class="menu-text">cool lingerie</p>
+            <p class="menu-price">$56</p>
+          </li>
+        </ul>
+      </section>
     </main>
+    <footer class="page-footer">
+      <ul class="menu-footer">
+        <li class="menu-item-finf">All Rights Reserved ©</li>
+        <li class="menu-item-finf">Dokan |</li>
+        <li class="menu-item-finf">
+          Designed<span class="themenGraph"> ThemenGraph</span>
+        </li>
+      </ul>
+    </footer>
   </body>
 </html>
