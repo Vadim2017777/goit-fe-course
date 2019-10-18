@@ -75,8 +75,7 @@ img {
 .slider-images {
   position: absolute;
   display: inline-block;
- 
-  min-height: 600px;
+  min-height: 500px;
   width: 100%;
   background-repeat: no-repeat;
   background-size: cover;
