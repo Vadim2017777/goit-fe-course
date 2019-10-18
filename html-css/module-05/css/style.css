@@ -75,11 +75,12 @@ img {
 .slider-images {
   position: absolute;
   display: inline-block;
-  min-height: 500px;
+  min-height:auto;
   width: 100%;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  overflow: hidden;
 }
 
 .slider {
