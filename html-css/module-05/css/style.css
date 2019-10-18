@@ -2,10 +2,9 @@
   outline: 1px solid red;
 } */
 
-
 html,
 body {
-  font-size: 14px;
+  font-size: 16px;
 }
 
 html {
@@ -36,17 +35,10 @@ img {
 
 .logo-mart {
   float: left;
+  width: 111px;
+  height: 32px;
+  padding: 0;
   margin: 0;
-  font-size: 2.14rem;
-  line-height: 32px;
-  font-family: "Roboto", sans-serif;
-  font-weight: 300;
-  text-transform: uppercase;
-  color: #555252;
-}
-
-.logo-mart::first-letter {
-  color: #1abc9c;
 }
 
 .navigation {
@@ -78,8 +70,9 @@ img {
 .menu-link:hover {
   color: #1abc9c;
 }
+/*SLIDER */
 
-.banner {
+.slider-images {
   position: absolute;
   display: inline-block;
   background-image: url(/images/slider/slide4.jpg);
@@ -89,7 +82,7 @@ img {
   background-size: cover;
   background-position: center;
 }
-/*SLIDER */
+
 .slider {
   margin: 0 auto 94px auto;
   position: relative;
@@ -103,7 +96,6 @@ img {
   height: 104px;
   opacity: 0.651;
   top: 50%;
-  /* z-index: 1; */
 }
 
 .slider-cntrl-prev {
@@ -128,12 +120,12 @@ img {
 
 .slider-text-main {
   display: inline-block;
-  margin: 0 0 0 0;
+  margin: 0;
   font-family: "Roboto", sans-serif;
   font-weight: 900;
-  font-size: 4.28rem;
+  font-size: 3.75rem;
   line-height: 82px;
-  color: white;
+  color: #ffffff;
 }
 
 .slider-text-choice {
@@ -141,9 +133,9 @@ img {
   margin: 0;
   font-family: "Roboto", sans-serif;
   font-weight: 300;
-  font-size: 1.71rem;
+  font-size: 1.5rem;
   line-height: 54px;
-  color: white;
+  color: #ffffff;
 }
 
 /* SECTION NEW COLLECTION */
@@ -154,7 +146,7 @@ img {
 .section-title {
   display: block;
   text-align: center;
-  font-size: 3.42rem;
+  font-size: 3rem;
   line-height: 58px;
   font-family: "Roboto", sans-serif;
   font-weight: 600;
@@ -179,10 +171,9 @@ img {
   margin: 0;
 }
 
-.menu-product-item {
+.menu-item-product {
   position: relative;
   float: left;
-  /* height: 320px; */
   width: 255px;
   margin: 0 30px 30px 0;
   padding: 0;
@@ -194,20 +185,31 @@ img {
   color: #ffffff;
 }
 
-.overlay {
+.menu-item-product:nth-child(4n) {
+  margin-right: 0;
+}
+
+.menu-item-product:nth-last-child(-n + 4) {
+  margin-bottom: 0;
+}
+
+.menu-overlay {
   position: absolute;
   display: inline-block;
   width: 235px;
   height: 300px;
-  background: black;
+  background: #000000;
   border: 10px;
-  border-color: rgb(255, 255, 255);
+  border-color: #ffffff;
   border-style: solid;
   opacity: 0;
 }
 
+.menu-item-product:hover .menu-overlay {
+  opacity: 0.568;
+}
 
-.btn{
+.btn {
   position: absolute;
   padding: 0;
   margin: 0;
@@ -217,52 +219,39 @@ img {
   opacity: 0;
   color: white;
   text-decoration: none;
+  width: 50px;
+  height: 50px;
+  outline: none;
 }
 
+.menu-item-product:hover .btn {
+  opacity: 1;
+}
 
 .hart {
-    left: 44px;
+  left: 44px;
+  background: url(/images/product-icons/hart.png);
 }
 
 .arrows {
   left: 102px;
+  background: url(/images/product-icons/arrows.png);
 }
 
-.clock{
+.clock {
   left: 160px;
+  background: url(/images/product-icons/clock.png);
 }
 
-.chart{
-  top:148px;
+.chart {
+  width: 166px;
+  height: 50px;
+  top: 148px;
   left: 44px;
+  background: url(/images/product-icons/add-to-cart.png);
 }
 
-.menu-product-item:nth-child(4n) {
-  margin-right: 0;
-}
-
-.menu-product-item:nth-last-child(-n + 4) {
-  margin-bottom: 0;
-}
-
-.menu-product-item:hover .btn {
-      opacity: 1;  
-    }
-
-.menu-product-item:hover .overlay {
-  opacity: 0.568;
-}
-
-.menu-product-item:hover .product-text {
-  background-color: rgb(26, 188, 156);
-}
-
-.menu-product-item:hover .product-price {
-  background-color: rgb(26, 188, 156);
-  opacity: 0.439;
-}
-
-.product-text {
+.menu-text {
   float: left;
   margin: 0;
   width: 200px;
@@ -271,7 +260,7 @@ img {
   line-height: 40px;
   background-color: #323232;
 }
-.product-price {
+.menu-price {
   margin: 0;
   height: 38px;
   width: 55px;
@@ -279,4 +268,41 @@ img {
   text-align: center;
   line-height: 40px;
   background-color: #8c8c8c;
+}
+
+.menu-item-product:hover .menu-text {
+  background-color: #1abc9c;
+}
+
+.menu-item-product:hover .menu-price {
+  background-color: #1abc9c;
+  opacity: 0.439;
+}
+
+.page-footer {
+  height: 90px;
+  background-color: #323232;
+  text-align: center;
+  padding-top: 50px;
+}
+
+.menu-footer {
+  display: inline-block;
+  padding: 0;
+  font-size: 0;
+}
+
+.menu-item-finf {
+  display: inline-block;
+  list-style: none;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 28px;
+  color: #ffffff;
+  text-indent: 4px;
+}
+
+.themenGraph {
+  color: #46bfa9;
 }
