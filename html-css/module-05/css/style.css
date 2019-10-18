@@ -100,7 +100,7 @@ img {
 }
 
 .slider-cntrl-prev {
-  background: url(/images/slider/arrow-left.jpg);
+  background: url(goit-fe-course/html-css/module-05/images/slider/arrow-left.jpg);
   left: 0;
   transform: translateY(-50%);
 }
