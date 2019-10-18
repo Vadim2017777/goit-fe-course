@@ -100,7 +100,7 @@ img {
 }
 
 .slider-cntrl-prev {
-  background: url(goit-fe-course/html-css/module-05/images/slider/arrow-left.jpg);
+  background: url(/images/slider/arrow-left.jpg);
   left: 0;
   transform: translateY(-50%);
 }
@@ -231,17 +231,17 @@ img {
 
 .hart {
   left: 44px;
-  background: url(images/Product/hart.png);
+  background: url(/images/Product/hart.png);
 }
 
 .arrows {
   left: 102px;
-  background: url(images/Product/arrows.png);
+  background: url(/images/Product/arrows.png);
 }
 
 .clock {
   left: 160px;
-  background: url(images/Product/clock.png);
+  background: url(/images/Product/clock.png);
 }
 
 .chart {
@@ -249,7 +249,7 @@ img {
   height: 50px;
   top: 148px;
   left: 44px;
-  background: url(images/Product/add-to-cart.png);
+  background: url(/images/Product/add-to-cart.png);
 }
 
 .menu-text {
