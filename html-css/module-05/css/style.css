@@ -100,13 +100,13 @@ img {
 }
 
 .slider-cntrl-prev {
-  background: url(images/slider/arrow-left.jpg);
+  background: url(/images/slider/arrow-left.jpg);
   left: 0;
   transform: translateY(-50%);
 }
 
 .slider-cntrl-next {
-  background: url(images/slider/arrow-right.jpg);
+  background: url(/images/slider/arrow-right.jpg);
   right: 0;
   transform: translateY(-50%);
 }
