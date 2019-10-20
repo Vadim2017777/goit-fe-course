@@ -1,4 +1,4 @@
-/* * {
+/*  {
   outline: 1px solid red;
 } */
 
@@ -31,7 +31,6 @@ img {
 .container {
   width: 1110px;
   margin: auto;
-  
 }
 
 .logo-mart {
@@ -73,42 +72,37 @@ img {
 }
 /*SLIDER */
 
-
-.slider{
-  position: relative;;
+.slider {
+  position: relative;
   display: inline-block;
   min-height: 600px;
   margin-bottom: 94px;
   width: 100%;
   padding: 0;
- 
-
 }
 
 .menu-slider {
   position: absolute;
   display: inline-block;
-   min-height: 600px;
-   width: 100%;
-   list-style: none;
-   margin: 0%;
-   padding: 0;
-
-
- }
-
-.menu-slider-item{
-display: inline-block;
-position: absolute;
-background-image: url(../images/slider/slide4.jpg);
-min-height: 600px;
-width: 100%;
-background-repeat: no-repeat;
-background-size: cover;
-background-position: center;
+  min-height: 600px;
+  width: 100%;
+  list-style: none;
+  margin: 0%;
+  padding: 0;
 }
 
-.slider-control{
+.menu-slider-item {
+  display: inline-block;
+  position: absolute;
+  background-image: url(../images/slider/slide4.jpg);
+  min-height: 600px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.slider-control {
   position: relative;
   width: 1110px;
   height: 600px;
@@ -123,15 +117,16 @@ background-position: center;
   opacity: 0.65;
   border: none;
   outline: none;
-  transition: opacity .4s ease;
+  transition: opacity 0.4s ease;
   top: 50%;
 }
- .left-arrow{
+
+.left-arrow {
   left: 0;
   transform: translateY(-50%);
- }
+}
 
- .right-arrow {
+.right-arrow {
   right: 0;
   transform: translateY(-50%);
 }
@@ -143,8 +138,8 @@ background-position: center;
   --bd: 4px solid #fff;
   width: var(--s);
   height: var(--s);
-  border-left:  var(--bd);
-  border-top:  var(--bd);
+  border-left: var(--bd);
+  border-top: var(--bd);
   position: absolute;
   top: 50%;
   transform: translate(-50%, -50%) rotate(-45deg);
@@ -152,12 +147,12 @@ background-position: center;
 
 .right-arrow::before {
   left: 45%;
- transform: translate(-50%, -50%) rotate(135deg);
+  transform: translate(-50%, -50%) rotate(135deg);
 }
 
 .left-arrow::before {
   left: 55%;
- transform: translate(-50%, -50%) rotate(-45deg);
+  transform: translate(-50%, -50%) rotate(-45deg);
 }
 
 .slider-button:hover,
@@ -165,8 +160,7 @@ background-position: center;
   background-color: #4ec6ab;
   opacity: 1;
   cursor: pointer;
- }
-
+}
 
 .slider-item {
   display: inline-block;
@@ -197,9 +191,6 @@ background-position: center;
 }
 
 /* SECTION NEW COLLECTION */
-.new-products {
-  margin-bottom: 96px;
-}
 
 .section-title {
   display: block;
@@ -222,17 +213,20 @@ background-position: center;
   content: "";
   margin-bottom: 80px;
 }
-/* PRODUCT */
+
 .menu-product {
-  list-style: none;
   padding: 0;
   margin: 0;
+  list-style: none;
 }
 
+/* PRODUCT-CARD */
+
 .menu-item-product {
+  display: block;
   position: relative;
   float: left;
-  height:283px;
+  height: 322px;
   width: 255px;
   margin: 0 30px 30px 0;
   padding: 0;
@@ -245,6 +239,13 @@ background-position: center;
   cursor: pointer;
 }
 
+.menu-img-wrapper {
+  height: 283px;
+  float: left;
+  overflow: hidden;
+  width: auto;
+}
+
 .menu-item-product:nth-child(4n) {
   margin-right: 0;
 }
@@ -255,77 +256,86 @@ background-position: center;
 
 .menu-overlay {
   position: absolute;
-  display: inline-block;
   width: 235px;
-  height: 300px;
-  background: #000000;
+  height: 263px;
+  background-color: #000000;
+  opacity: 0;
   border: 10px;
   border-color: #ffffff;
   border-style: solid;
-  opacity: 0;
+  transition-duration: 0.3s;
 }
 
-.menu-item-product:hover .menu-overlay {
-  opacity: 0.568;
-}
-.menu-item-product:hover .btn {
-  background: #1abc9c;
-  opacity: 1;
-  border: 1px solid #1abc9c;
-}
-
-.btn {
+.menu-btn-wrapper {
   position: absolute;
-  padding: 0;
-  margin: 0;
-  border: none;
-  background: transparent;
-  top: 90px;
   opacity: 0;
-  color: white;
-  text-decoration: none;
+  width: auto;
+  left: 44px;
+  top: 90px;
+  transition-duration: 0.3s;
+}
+
+.menu-btn {
   width: 50px;
   height: 50px;
+  background: transparent;
+  margin: 0 1px 10px;
+  padding: 0 0 0 10px;
+  border: 1px solid #fff;
+  color: white;
   outline: none;
-}
-
-
-
-
-
-.hart {
-  left: 44px;
-  background: url(../images/Product/hart.png);
-}
-
-.arrows {
-  left: 102px;
-  background: url(../images/Product/arrows.png);
-}
-
-.clock {
-  left: 160px;
-  background: url(../images/Product/clock.png);
+  cursor: pointer;
 }
 
 .chart {
-  width: 166px;
+  width: 164px;
   height: 50px;
-  top: 148px;
-  left: 44px;
-  background: url(../images/Product/add-to-cart.png);
+  padding: 0;
+  background: #323232;
+  text-transform: uppercase;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+}
+
+.icon {
+  background-color: transparent;
+  width: 25px;
+  height: auto;
+  display: block;
+  margin: auto;
+}
+
+.cart {
+  float: left;
+  padding-top: 4px;
+  padding-left: 10px;
+}
+
+.cart-text {
+  float: right;
+  padding-top: 4px;
+  margin-right: 10px;
+  font-size: 0.875rem;
+  line-height: 25px;
+  color: #fff;
 }
 
 .menu-text {
+  display: block;
+  position: relative;
   float: left;
   margin: 0;
   width: 200px;
   height: 38px;
   text-indent: 1rem;
   line-height: 40px;
+  color: #fff;
   background-color: #323232;
+  transition-duration: 0.3s;
 }
 .menu-price {
+  display: block;
+  position: relative;
   margin: 0;
   height: 38px;
   width: 55px;
@@ -333,6 +343,7 @@ background-position: center;
   text-align: center;
   line-height: 40px;
   background-color: #8c8c8c;
+  transition-duration: 0.3s;
 }
 
 .menu-item-product:hover .menu-text {
@@ -340,9 +351,27 @@ background-position: center;
 }
 
 .menu-item-product:hover .menu-price {
-  background-color: #1abc9c;
-  opacity: 0.439;
+  background-color: #7fd9c7;
 }
+
+.menu-item-product:hover .menu-overlay {
+  opacity: 0.549;
+}
+
+.menu-item-product:hover .menu-btn-wrapper {
+  opacity: 1;
+}
+
+.menu-btn:hover {
+  background: #1abc9c;
+  opacity: 1;
+  border: 1px solid #1abc9c;
+}
+
+.new-products{
+  margin-bottom: 100px;
+}
+
 
 .page-footer {
   height: 90px;
