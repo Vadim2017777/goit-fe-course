@@ -31,6 +31,7 @@ img {
 .container {
   width: 1110px;
   margin: auto;
+  
 }
 
 .logo-mart {
@@ -72,57 +73,100 @@ img {
 }
 /*SLIDER */
 
-.slider-images {
+
+.slider{
+  position: relative;;
+  display: inline-block;
+  min-height: 600px;
+  margin-bottom: 94px;
+  width: 100%;
+  padding: 0;
+ 
+
+}
+
+.menu-slider {
   position: absolute;
   display: inline-block;
-<<<<<<< HEAD
-  background-image: url(../images/slider/slide4.jpg);
-=======
->>>>>>> b21b5e0e235d0cce952af3148f2853b24ddc8dac
-  min-height: 600px;
-  width: 100%;
-  background: url(images/slider/slide4.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  overflow: hidden;
+   min-height: 600px;
+   width: 100%;
+   list-style: none;
+   margin: 0%;
+   padding: 0;
+
+
+ }
+
+.menu-slider-item{
+display: inline-block;
+position: absolute;
+background-image: url(../images/slider/slide4.jpg);
+min-height: 600px;
+width: 100%;
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center;
 }
 
-.slider {
-  margin: 0 auto 94px auto;
+.slider-control{
   position: relative;
+  width: 1110px;
   height: 600px;
+  margin: auto;
 }
 
-.slider-cntrl {
-  position: absolute;
-  border: none;
+.slider-button {
   width: 104px;
   height: 104px;
-  opacity: 0.651;
+  position: absolute;
+  background-color: #1abc9c;
+  opacity: 0.65;
+  border: none;
+  outline: none;
+  transition: opacity .4s ease;
   top: 50%;
-  z-index: 1;
 }
-
-.slider-cntrl-prev {
-<<<<<<< HEAD
-  background: url(../images/slider/arrow-left.jpg);
-=======
-  background: url(images/slider/arrow-left.jpg);
->>>>>>> b21b5e0e235d0cce952af3148f2853b24ddc8dac
+ .left-arrow{
   left: 0;
   transform: translateY(-50%);
-}
+ }
 
-.slider-cntrl-next {
-<<<<<<< HEAD
-  background: url(../images/slider/arrow-right.jpg);
-=======
-  background: url(images/slider/arrow-right.jpg);
->>>>>>> b21b5e0e235d0cce952af3148f2853b24ddc8dac
+ .right-arrow {
   right: 0;
   transform: translateY(-50%);
 }
+
+.right-arrow::before,
+.left-arrow::before {
+  content: "";
+  --s: 28px;
+  --bd: 4px solid #fff;
+  width: var(--s);
+  height: var(--s);
+  border-left:  var(--bd);
+  border-top:  var(--bd);
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.right-arrow::before {
+  left: 45%;
+ transform: translate(-50%, -50%) rotate(135deg);
+}
+
+.left-arrow::before {
+  left: 55%;
+ transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.slider-button:hover,
+.slider-button:focus {
+  background-color: #4ec6ab;
+  opacity: 1;
+  cursor: pointer;
+ }
+
 
 .slider-item {
   display: inline-block;
@@ -188,6 +232,7 @@ img {
 .menu-item-product {
   position: relative;
   float: left;
+  height:283px;
   width: 255px;
   margin: 0 30px 30px 0;
   padding: 0;
@@ -197,6 +242,7 @@ img {
   line-height: 32px;
   text-transform: uppercase;
   color: #ffffff;
+  cursor: pointer;
 }
 
 .menu-item-product:nth-child(4n) {
@@ -222,6 +268,11 @@ img {
 .menu-item-product:hover .menu-overlay {
   opacity: 0.568;
 }
+.menu-item-product:hover .btn {
+  background: #1abc9c;
+  opacity: 1;
+  border: 1px solid #1abc9c;
+}
 
 .btn {
   position: absolute;
@@ -238,35 +289,23 @@ img {
   outline: none;
 }
 
-.menu-item-product:hover .btn {
-  opacity: 1;
-}
+
+
+
 
 .hart {
   left: 44px;
-<<<<<<< HEAD
-  background: url(../images/product-icons/hart.png);
-=======
-  background: url(images/Product/hart.png);
->>>>>>> b21b5e0e235d0cce952af3148f2853b24ddc8dac
+  background: url(../images/Product/hart.png);
 }
 
 .arrows {
   left: 102px;
-<<<<<<< HEAD
-  background: url(../images/product-icons/arrows.png);
-=======
-  background: url(images/Product/arrows.png);
->>>>>>> b21b5e0e235d0cce952af3148f2853b24ddc8dac
+  background: url(../images/Product/arrows.png);
 }
 
 .clock {
   left: 160px;
-<<<<<<< HEAD
-  background: url(../images/product-icons/clock.png);
-=======
-  background: url(images/Product/clock.png);
->>>>>>> b21b5e0e235d0cce952af3148f2853b24ddc8dac
+  background: url(../images/Product/clock.png);
 }
 
 .chart {
@@ -274,11 +313,7 @@ img {
   height: 50px;
   top: 148px;
   left: 44px;
-<<<<<<< HEAD
-  background: url(../images/product-icons/add-to-cart.png);
-=======
-  background: url(images/Product/add-to-cart.png);
->>>>>>> b21b5e0e235d0cce952af3148f2853b24ddc8dac
+  background: url(../images/Product/add-to-cart.png);
 }
 
 .menu-text {
