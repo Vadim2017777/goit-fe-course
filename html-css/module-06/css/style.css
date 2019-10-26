@@ -1,0 +1,189 @@
+/* * {
+  outline: 1px solid red;
+} */
+
+html,
+body {
+  font-size: 14px;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before *::after {
+  box-sizing: inherit;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+
+.site-header{
+  margin-bottom: 126px;
+}
+
+.site-navigation {
+  display: flex;
+  height: 50px;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.menu {
+  
+  display: flex;
+
+  flex-basis: 490px;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.menu-link {
+  
+  text-decoration: none;
+  font-size: 1rem;
+  line-height: 16.8px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  color:#95e1d3; 
+  }
+
+  
+
+  .menu-link:hover{
+    color: #f38181;
+    padding-bottom: 10px;
+    transition: 0.2s;
+    border-bottom: 2px solid currentColor;
+   
+  }
+
+  .title-item{
+    padding: 0;
+    margin:0;
+    text-align: center;
+  }
+
+  .title-intro{
+    display: block;
+    padding-bottom:20px;
+    font-family: 'Kaushan Script', cursive;
+    font-size: 1.143rem;
+    line-height: 1.2;
+  }
+
+  .title-text{
+    display: block;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.143rem;
+    line-height: 1.2;
+  }
+
+  .title-text::after {
+    display: block;
+    background-color: rgb(243, 129, 129);
+    margin: 40px auto 0;
+    width: 60px;
+    height: 3px;
+    content: "";
+   }
+
+  .title-item{
+    margin-bottom: 62px;
+  }
+
+  .menu-azservices{
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+   
+  }
+
+  .menu-azservices-item{
+    
+    flex-basis: 380px;
+    min-height: 170px;
+     }
+
+  
+  .menu-azservices-text{
+    display: inline-block;
+    vertical-align: top;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    line-height: 1.2;
+    text-transform: uppercase;
+    color: #999999;
+    }
+
+  .menu-azservices-item::before{
+    display: inline-block;
+    width: 80px;
+    height: 31px;
+    background: center;
+    background-repeat: no-repeat;
+    content: "";
+    
+   }
+  
+   .clock::before{
+    background-image: url(../images/icons/ALARM.png);
+   }
+
+   .linegraph::before{
+    background-image: url(../images/icons/LINE_GRAPH.png);
+   }
+   .creativity::before{
+    background-image: url(../images/icons/COMPUTER.png);
+   }
+
+   .seo::before{
+    background-image: url(../images/icons/BOOK.png);
+
+   }
+
+.css-html::before{
+  background-image: url(../images/icons/HOME.png);
+
+}
+
+.digital::before{
+  background-image: url(../images/icons/IMAGE.png);
+
+}
+
+
+
+  .menu-azservices-paragraf{
+   display: inline-block;
+    padding-left:80px;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size:  1.071rem;
+    line-height: 24px;
+    color: #999999;
+  
+   
+   
+  }
+ 
+  
+
+  
+  
