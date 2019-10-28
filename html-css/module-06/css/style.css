@@ -317,18 +317,20 @@ img {
   height: 42px;
 }
 
-.place-input {
-  width: 300px;
+.email-input input {
+  padding: 0;
   border: 1px solid rgb(229, 229, 229);
+  height: 40px;
+  width: 300px;
+}
+
+.email-input input::placeholder {
   font-family: "Roboto", sans-serif;
   font-weight: 300;
   font-style: italic;
   font-size: 1rem;
-  line-height: 24px;
+  line-height: 20px;
   text-indent: 1rem;
-}
-
-input[type="email"]::-webkit-input-placeholder {
   color: rgb(204, 204, 204);
 }
 
