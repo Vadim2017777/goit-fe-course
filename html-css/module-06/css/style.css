@@ -292,67 +292,61 @@ img {
   color: #999999;
 }
 
-.footer-wrapper{
+.footer-wrapper {
   display: flex;
   min-height: 60px;
   justify-content: space-between;
   align-items: center;
-  border-top: 1px solid  rgb(229, 229, 229);
+  border-top: 1px solid rgb(229, 229, 229);
 }
 
-
-.footer-inf{
+.footer-inf {
   font-family: "Montserrat", sans-serif;
   font-size: 1rem;
   line-height: 1.2;
-   color: rgb(51, 51, 51);
+  color: rgb(51, 51, 51);
 }
 
-.footer-word{
-  color:#f38181;
+.footer-word {
+  color: #f38181;
 }
 
-.Subscribe{
-  border: none;
-  outline: none;
-  padding:14px 32px;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 900;
-  font-size: 1rem;
-  line-height: 1.2;
-  text-transform: uppercase;
-  color: white;
-  background-color:rgb(149, 225, 211);
-  opacity: 0.8;
-  transition: opacity 0.2s linear;
-
-}
-
-.Subscribe:hover{
- opacity: 1;
-}
-
-.place-input{
-   width: 230px;
+.email-input {
+  display: flex;
+  width: 380px;
   height: 42px;
-  padding: 0;
-  margin: 0;
-  border: 1px solid  rgb(229, 229, 229);
+}
+
+.place-input {
+  width: 300px;
+  border: 1px solid rgb(229, 229, 229);
   font-family: "Roboto", sans-serif;
   font-weight: 300;
-  font-style:italic;
+  font-style: italic;
   font-size: 1rem;
   line-height: 24px;
   text-indent: 1rem;
 }
 
 input[type="email"]::-webkit-input-placeholder {
-   color: rgb(204, 204, 204);
-  }
+  color: rgb(204, 204, 204);
+}
 
+.Subscribe {
+  border: none;
+  outline: none;
+  padding: 14px 32px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;
+  font-size: 1rem;
+  line-height: 1.2;
+  text-transform: uppercase;
+  color: white;
+  background-color: rgb(149, 225, 211);
+  opacity: 0.8;
+  transition: opacity 0.2s linear;
+}
 
-
-
-
-
-
+.Subscribe:hover {
+  opacity: 1;
+}
