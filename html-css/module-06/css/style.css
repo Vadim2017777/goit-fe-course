@@ -207,7 +207,6 @@ img {
   opacity: 0;
   z-index: 3;
   transition: transform 0.2s linear;
- 
   cursor: pointer;
 }
 
@@ -223,7 +222,6 @@ img {
   justify-content: center;
   width: 380px;
   height: 470px;
-  overflow: hidden;
   background-color: rgb(149, 225, 211);
   z-index: 1;
 }
@@ -259,6 +257,7 @@ img {
   color: white;
   outline: none;
   cursor: pointer;
+  transition: background-color 0.2s linear;
 }
 
 .card:hover .button-wraper {
@@ -275,7 +274,6 @@ img {
 
 .card-name {
   margin: 0;
-
   padding: 26px 0 10px 0;
   font-family: "Montserrat", sans-serif;
   font-size: 1rem;
