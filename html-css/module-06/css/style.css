@@ -217,7 +217,7 @@ img {
 
 .image-wrapper {
   display: flex;
-  position: relative;
+  /* position: relative; */
   align-items: center;
   justify-content: center;
   width: 380px;
