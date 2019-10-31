@@ -70,11 +70,14 @@
           Proin iaculis purus consequat sem cure.
         </p>
      </div>
-<form action="javascript:void(0);" method="POST" class="contact-form container">
-<input type="name" placeholder="Your name *" required>
-<input type="email" placeholder="Your email *" required>
-<input type="text" placeholder="subject">
-<input type="text" placeholder="Your massage * " required>
+<form  class="contact-form container" action="javascript:void(0);" method="get" >
+
+  <ul class="menu-contact">
+    <li class="menu-contact-item"><input type="name" placeholder="Your name *" name="user_name" required></li>
+    <li class="menu-contact-item"> <input type="email" placeholder="Your email *" name="email" required> </li>
+    <li class="menu-contact-item"><input type="text" placeholder="subject" name="subject_text"></li>
+    <li class="menu-contact-item"><input type="text-massage" placeholder="Your massage *" name="massage_text" required></li>
+ </ul>
 <button type="submit">Send massage</button>
     
 </form>

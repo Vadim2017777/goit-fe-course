@@ -181,8 +181,37 @@ background-image: url(../images/icons/Icon-Basket.png);
 
 .contact-form{
     position: relative;
+    height: 320px;
+    display: flex;
+    flex-direction: column;
+    
+
+    
 }
 
-.contact-form{
-    min-height: 320px;
+
+
+.menu-contact{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  
 }
+
+
+.contact-form input{
+border:0;
+width:450px;
+height: 52px;
+}
+ 
+
+.contact-form input[type="text-massage"]{
+  border:0;
+  width:450px;
+  height: 150px;
+  }
+
