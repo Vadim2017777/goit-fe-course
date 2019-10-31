@@ -1,5 +1,188 @@
-body{
-    font-family: 'Roboto Slab';
-    font-style: normal;
-    font-weight: 400;
+/* * {
+  outline: 1px solid red;
+} */
+
+html,
+body {
+  font-size: 14px;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before *::after {
+  box-sizing: inherit;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.site-navigation {
+  min-height: 104px;
+  margin-bottom: 72px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.site-logo {
+  width: 79px;
+  height: 28px;
+  background-color: #fff;
+}
+
+.menu {
+  width: 484px;
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  line-height: 41px;
+  text-transform: uppercase;
+  transition: color 0.2s linear;
+}
+
+.menu-item {
+  transition: color 0.2s linear;
+  cursor: pointer;
+}
+
+.menu-item:hover {
+  color: #fed136;
+}
+
+.title-text {
+  margin: 0;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 2.857rem;
+  line-height: 75px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.title-overview {
+  margin: 0 0 78px;
+  font-family: "Droid Serif";
+  font-weight: 400;
+  font-style: italic;
+  font-size: 1.143rem;
+  line-height: 1.2;
+  text-align: center;
+  color: #777777;
+
+}
+
+ 
+/*SECTION SERVICES */
+
+.menu-services {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  margin-bottom: 116px;
+}
+
+.menu-services-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 290px;
+  min-height: 192px;
+}
+
+.menu-services-item:before {
+  display: block;
+  content: "";
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  border: 4px solid #fed136;
+  background-color: #fff;
+  
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-bottom: 24px;
+}
+
+
+
+.basket:before {
+background-image: url(../images/icons/Icon-Basket.png);
+}
+
+
+.laptop:before{
+    background-image: url(../images/icons/Icon-Laptop.png);
+}
+
+.locked:before{
+    background-image: url(../images/icons/Icon-Laptop.png);
+}
+
+.menu-services-text {
+  margin: 0;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.286rem;
+  line-height: 1.2;
+  padding-bottom: 16px;
+}
+
+.menu-services-title-description {
+  margin: 0;
+  font-family: "Roboto Slab";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.2;
+  text-align: center;
+  color: #777777;
+}
+
+
+/* SECTION CONTACT US */
+.contact{
+   color: #fff;
+}
+
+
+
+.contact-text{
+    
+    position: relative;
+    
+}
+
+.backmap{
+    min-height: 664px;
+    position: absolute;
+    width:100%;
+    height: 678px;
+}
+
+.contact-form{
+    position: relative;
+}
+
+.contact-form{
+    min-height: 320px;
 }
