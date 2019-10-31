@@ -196,6 +196,7 @@ img {
 
 .contact-form input {
   border: 0;
+  border: 1px solid;
   width: 450px;
   height: 52px;
   font-family: "Montserrat";
@@ -206,7 +207,29 @@ img {
   text-transform: uppercase;
   color: #bbbbbb;
   text-indent: 1rem;
+  /* outline:2px solid ; */
+
 }
+
+.contact-form  [type="email"]:invalid:focus{
+  outline:2px solid red;
+}
+
+.contact-form  [type="email"]:valid{
+  outline:2px solid green;
+}
+
+
+.contact-form  [type="name"]:invalid:focus{
+  outline-color: red;
+}
+
+.contact-form  [type="name"]:valid{
+  outline:2px solid green;
+}
+
+
+
 
 .contact-form textarea {
   box-sizing: border-box;
@@ -225,7 +248,21 @@ img {
   vertical-align: bottom;
   resize: none;
   border: 0;
+  
+
 }
+
+.contact-form  [type="text-aria"]:invalid:focus{
+  outline:2px solid red;
+}
+
+
+.contact-form  [type="text-aria"]:valid{
+  outline:2px solid green;
+}
+
+
+
 
 .contact-form button {
 
