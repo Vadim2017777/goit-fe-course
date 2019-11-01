@@ -213,11 +213,11 @@ img {
   outline: 2px solid #008000;
 }
 
-.contact-form [type="name"]:invalid:focus {
+.contact-form [ name="user_name"]:invalid:focus {
   outline: 2px solid #ff0000;
 }
 
-.contact-form [type="name"]:valid {
+.contact-form [ name="user_name"]:valid {
   outline: 2px solid #008000;
 }
 
@@ -241,11 +241,11 @@ img {
 
 }
 
-.contact-form [type="text-aria"]:invalid:focus {
+.contact-form [ name="user_text_aria"]:invalid:focus {
   outline: 2px solid #ff0000;
 }
 
-.contact-form [type="text-aria"]:valid {
+.contact-form [ name="user_text_aria"]:valid {
   outline: 2px solid #008000;
 }
 
