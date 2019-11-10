@@ -1,0 +1,260 @@
+html,
+body {
+  font-size: 14px;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before *::after {
+  box-sizing: inherit;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.wraper-img {
+  width: 100%;
+  min-height: 540px;
+  background-color: rgb(26, 25, 21);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-image: url(../images/background/image_3.png);
+  margin-bottom: 64px;
+}
+
+.header_content {
+  padding-top: 20px;
+}
+
+.wrappeer-header-links {
+  display: block;
+  margin-bottom: 106px;
+}
+
+.header-link {
+  display: inline-block;
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1.2;
+  color: #ffffff;
+  padding: 8px 14px;
+  border-radius: 20px;
+  border: 2px solid transparent;
+  transition: border-color 0.2s linear;
+}
+
+.header-link:hover {
+  border-color: #fff;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.site-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 6px;
+  margin-bottom: 34px;
+}
+.wrappeer-header-links {
+  display: flex;
+  justify-content: center;
+}
+
+.header-text {
+  text-align: center;
+  color: #fff;
+}
+
+.site-subtitle {
+  margin: 0 0 10px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 2.143rem;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+.site-subtitle-text {
+  margin: 0 0 18px;
+  padding: 0 30px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 1.286rem;
+  line-height: 1.2;
+}
+
+.search-button {
+  height: 44px;
+  padding: 0 50px;
+  border: none;
+  outline: none;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 1.2;
+  color: #fff;
+  border-radius: 20px;
+  background-color: rgb(255, 78, 80);
+  cursor: pointer;
+}
+
+.partners {
+  text-align: center;
+  margin-bottom: 38px;
+}
+
+.partners-title {
+  margin: 0 0 18px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 1.571rem;
+  line-height: 1.2;
+  color: #333333;
+}
+
+.cards {
+  margin: 0;
+  padding: 0;
+}
+
+.card-item {
+  min-height: 204px;
+  list-style: none;
+}
+
+.wrapper-img {
+  position: relative;
+  margin: 0 auto 20px;
+  display: block;
+  width: 121px;
+  height: 121px;
+}
+
+.figure-img {
+  margin: 0 0 16px;
+}
+
+.wrapper-img::before {
+  box-sizing: border-box;
+  display: block;
+  content: "";
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  right: -4px;
+  bottom: -4px;
+  border: 4px solid rgb(255, 255, 255);
+  border-radius: 50%;
+
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.Bradley::before {
+  background-color: rgb(255, 78, 80);
+  background-image: url(../images/icons/iconTv.png);
+}
+
+.Lucas::before {
+  background-color: rgb(255, 165, 7);
+  background-image: url(../images/icons/iconBottle.png);
+}
+
+.Heather::before {
+  background-color: rgb(28, 215, 173);
+  background-image: url(../images/icons/iconcup.png);
+}
+
+.Bradley::before {
+  background-color: rgb(78, 115, 219);
+  background-image: url(../images/icons/iconPlane.png);
+}
+
+.card-name {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1.2;
+  color: #333333;
+}
+
+.card-text {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 1rem;
+  line-height: 1.2;
+  color: #666666;
+}
+
+.partners-button {
+  padding: 0 70px;
+  height: 44px;
+  border: 2px solid #ff4e50;
+  border-width: 2px;
+  outline: none;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 1.2;
+  color: #ff4e50;
+  border-radius: 20px;
+  background-color: #ffffff;
+  cursor: pointer;
+}
+
+@media (min-width: 768px) {
+  .wraper-img {
+    min-height: 700px;
+  }
+
+  .header_content {
+    padding-top: 38px;
+  }
+
+  .site-logo {
+    justify-content: flex-start;
+  }
+
+  .wrappeer-header-links {
+    justify-content: flex-end;
+    margin-bottom: 140px;
+  }
+
+  .site-subtitle {
+    font-size: 3.571rem;
+    margin-bottom: 32px;
+  }
+
+  .site-subtitle-text {
+    font-size: 24px;
+    padding: 0;
+    margin-bottom: 28px;
+  }
+
+  .search-button {
+    padding: 0 22px;
+  }
+}
+
+.partners-button {
+  padding: 0 30px;
+}
+
+@media (min-width: 768px) {
+  .card-items [class*="col-"] {
+    margin-bottom: 28px;
+  }
+}
