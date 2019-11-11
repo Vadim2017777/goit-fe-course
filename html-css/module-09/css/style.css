@@ -198,6 +198,10 @@ img {
   color: #666666;
 }
 
+.card-items [class*="col-"] {
+  margin-bottom: 28px;
+}
+
 .partners-button {
   padding: 0 70px;
   height: 44px;
@@ -251,10 +255,4 @@ img {
 
 .partners-button {
   padding: 0 30px;
-}
-
-@media (min-width: 768px) {
-  .card-items [class*="col-"] {
-    margin-bottom: 28px;
-  }
 }
