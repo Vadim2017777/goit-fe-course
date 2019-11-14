@@ -28,16 +28,22 @@ img {
 }
 
 .site-header {
+  
   background-image:  -webkit-linear-gradient(90deg, rgba(252,227,138, 90%) 0%, rgba(243,129,129, 90%) 100%), -webkit-image-set(
-    url(../images/background_image/eagle.jpg) 1x,
-    url(../images/background_image/eagle@2x.jpg) 2x
+    url(../images/background_image/eagle-min.jpg) 1x,
+    url(../images/background_image/eagle@2x-min.jpg) 2x
     );
   min-height: 1000px;
-  margin-bottom: 126px;
+  margin-bottom: 46px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  
 }
 
 .site-navigation {
   padding-top: 28px;
+  margin-bottom: 178px;
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
@@ -71,29 +77,77 @@ img {
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
   text-transform: uppercase;
-  color: #95e1d3;
+  color: #fff;
   transition: all 0.2s linear;
 }
 
 .menu-link:hover {
-  color: #f38181;
+  color: #efc51a;
   padding-bottom: 10px;
   border-bottom: 2px solid currentColor;
 }
 
+.menu-svg{
+  display:block;
+  fill: #fff;
+  height: 16px;
+  width: 18px;
+  line-height: 32px;
+  transition: fill 0.2s linear;
+}
 
-/* .menu-item:hover:after {
-  display: block;
-  content: "";
-  margin-top: 10px;
-  width: 100%;
-  height: 2px;
+
+.menu-svg:hover{
+  fill: #efc51a;;
+}
+
+
+
+
+
+.atraction{
+  text-align: center;
+}
+
+.attraction_item{
+  font-family: 'Kaushan Script', cursive;
+  font-size: 5.143rem;
+  line-height: 1.2;
+  font-weight: 400;
+  color: #fff;
+}
+
+
+.attraction_name{
+  padding-bottom:  110px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 5.143rem;
+  font-size: 10.71rem;
+  line-height: 1.2;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+
+.button_attaction{
+  border: 3px solid #fff;
+  outline: none;
+  padding: 14px 32px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;
+  font-size: 1rem;
+  line-height: 1.2;
+  text-transform: uppercase;
+  color: white;
+  background-color:transparent;
+  opacity: 0.8;
   transition: all 0.2s linear;
-  background-color: rgb(243, 129, 129);
-} */
+}
 
-.menu-link:hover {
-  color: #f38181;
+.button_attaction:hover{
+  background-color: #f38181;
+  opacity: 1;
 }
 
 
@@ -157,6 +211,7 @@ img {
   line-height: 1.2;
   text-transform: uppercase;
   color: rgb(153, 153, 153);
+  
 }
 
 .menu-azservices-item::before {
@@ -166,14 +221,21 @@ img {
   background: center;
   background-repeat: no-repeat;
   content: "";
+  
+
 }
 
 .clock::before {
-  background-image: url(../images/icons/ALARM.png);
+
+  background-image: url('../images/icons/symbol-defs.svg#icon-ALARM-view-blue');
 }
 
+ 
+  
+
+
 .linegraph::before {
-  background-image: url(../images/icons/LINE_GRAPH.png);
+  background: url(../images/icons/BOOK.svg);
 }
 .creativity::before {
   background-image: url(../images/icons/COMPUTER.png);
@@ -202,10 +264,15 @@ img {
   color: rgb(153, 153, 153);
 }
 
+
+
+
+
 /* SECTION TEAM */
 
 .our-team {
   margin-bottom: 50px;
+  
 }
 
 .text-ourteam {
