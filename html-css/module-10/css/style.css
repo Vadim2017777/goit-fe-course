@@ -1,0 +1,389 @@
+* {
+  outline: 1px solid red;
+}
+
+html,
+body {
+  font-size: 14px;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before *::after {
+  box-sizing: inherit;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.site-header {
+  background-image:  -webkit-linear-gradient(90deg, rgba(252,227,138, 90%) 0%, rgba(243,129,129, 90%) 100%), -webkit-image-set(
+    url(../images/background_image/eagle.jpg) 1x,
+    url(../images/background_image/eagle@2x.jpg) 2x
+    );
+  min-height: 1000px;
+  margin-bottom: 126px;
+}
+
+.site-navigation {
+  padding-top: 28px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+
+}
+
+.menu {
+  display: flex;
+  flex-basis: 490px;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.menu-link {
+  text-decoration: none;
+  font-size: 1rem;
+  line-height: 16.8px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #95e1d3;
+  transition: color 0.2s linear;
+}
+
+
+.menu-link {
+  text-decoration: none;
+  font-size: 1rem;
+  line-height: 16.8px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #95e1d3;
+  transition: all 0.2s linear;
+}
+
+.menu-link:hover {
+  color: #f38181;
+  padding-bottom: 10px;
+  border-bottom: 2px solid currentColor;
+}
+
+
+/* .menu-item:hover:after {
+  display: block;
+  content: "";
+  margin-top: 10px;
+  width: 100%;
+  height: 2px;
+  transition: all 0.2s linear;
+  background-color: rgb(243, 129, 129);
+} */
+
+.menu-link:hover {
+  color: #f38181;
+}
+
+
+
+/* SECTION amazing-services */
+
+.title-item {
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+.title-intro {
+  display: block;
+  padding-bottom: 20px;
+  font-family: "Kaushan Script", cursive;
+  font-size: 1.143rem;
+  line-height: 1.2;
+}
+
+.title-text {
+  display: block;
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.143rem;
+  line-height: 1.2;
+}
+
+.title-text::after {
+  display: block;
+  background-color: rgb(243, 129, 129);
+  margin: 40px auto 0;
+  width: 60px;
+  height: 3px;
+  content: "";
+}
+
+.amazing-services {
+  margin-bottom: 62px;
+}
+
+.menu-azservices {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.menu-azservices-item {
+  flex-basis: 380px;
+  min-height: 170px;
+}
+
+.menu-azservices-text {
+  display: inline-block;
+  vertical-align: top;
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  line-height: 1.2;
+  text-transform: uppercase;
+  color: rgb(153, 153, 153);
+}
+
+.menu-azservices-item::before {
+  display: inline-block;
+  width: 80px;
+  height: 31px;
+  background: center;
+  background-repeat: no-repeat;
+  content: "";
+}
+
+.clock::before {
+  background-image: url(../images/icons/ALARM.png);
+}
+
+.linegraph::before {
+  background-image: url(../images/icons/LINE_GRAPH.png);
+}
+.creativity::before {
+  background-image: url(../images/icons/COMPUTER.png);
+}
+
+.seo::before {
+  background-image: url(../images/icons/BOOK.png);
+}
+
+.css-html::before {
+  background-image: url(../images/icons/HOME.png);
+}
+
+.digital::before {
+  background-image: url(../images/icons/IMAGE.png);
+}
+
+.menu-azservices-paragraf {
+  display: inline-block;
+  vertical-align: top;
+  padding-left: 80px;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.071rem;
+  line-height: 24px;
+  color: rgb(153, 153, 153);
+}
+
+/* SECTION TEAM */
+
+.our-team {
+  margin-bottom: 50px;
+}
+
+.text-ourteam {
+  margin: auto;
+  text-align: center;
+  width: 949px;
+  min-height: 136px;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.071rem;
+  line-height: 24px;
+  color: rgb(153, 153, 153);
+}
+
+.cards {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card {
+  display: block;
+  width: 380px;
+  height: 540px;
+}
+
+.card-overlay-top {
+  position: absolute;
+  width: 380px;
+  height: 470px;
+  background-image: linear-gradient(
+    0deg,
+    rgb(252, 227, 138) 0%,
+    rgb(243, 129, 129) 100%
+  );
+  opacity: 0;
+  z-index: 3;
+  transition: transform 0.2s linear;
+  cursor: pointer;
+}
+
+.card:hover .card-overlay-top {
+  transform: translateX(-10px) translateY(-10px);
+  opacity: 0.9;
+}
+
+.image-wrapper {
+  display: flex;
+  /* position: relative; */
+  align-items: center;
+  justify-content: center;
+  width: 380px;
+  height: 470px;
+  background-color: rgb(149, 225, 211);
+  z-index: 1;
+}
+
+.card-image {
+  position: absolute;
+  width: auto;
+  height: 470px;
+  z-index: 2;
+  transition: transform 0.2s linear;
+}
+
+.card:hover .card-image {
+  transform: translateX(-10px) translateY(-10px);
+}
+
+.button-wraper {
+  display: flex;
+  opacity: 0;
+  z-index: 4;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  background-color: rgb(252, 227, 138);
+  padding: 0;
+  border: none;
+  border-right: 1px solid rgb(249, 189, 135);
+  color: white;
+  outline: none;
+  cursor: pointer;
+  transition: background-color 0.2s linear;
+}
+
+.card:hover .button-wraper {
+  opacity: 1;
+}
+
+.btn:hover {
+  background-color: rgb(149, 225, 211);
+}
+
+.card-text {
+  text-align: center;
+}
+
+.card-name {
+  margin: 0;
+  padding: 26px 0 10px 0;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  line-height: 1.2;
+  text-transform: uppercase;
+  color: #333333;
+}
+
+.card-occupation {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+  font-size: 1.071rem;
+  line-height: 1.2;
+  color: #999999;
+}
+
+.footer-wrapper {
+  display: flex;
+  min-height: 60px;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid rgb(229, 229, 229);
+}
+
+.footer-inf {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  line-height: 1.2;
+  color: rgb(51, 51, 51);
+}
+
+.footer-word {
+  color: #f38181;
+}
+
+.email-input {
+  display: flex;
+  width: 380px;
+  height: 42px;
+}
+
+.email-input input {
+  padding: 0;
+  border: 1px solid rgb(229, 229, 229);
+  height: 40px;
+  width: 300px;
+}
+
+.email-input input::placeholder {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+  font-size: 1rem;
+  line-height: 20px;
+  text-indent: 1rem;
+  color: rgb(204, 204, 204);
+}
+
+.Subscribe {
+  border: none;
+  outline: none;
+  padding: 14px 32px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;
+  font-size: 1rem;
+  line-height: 1.2;
+  text-transform: uppercase;
+  color: white;
+  background-color: rgb(149, 225, 211);
+  opacity: 0.8;
+  transition: opacity 0.2s linear;
+}
+
+.Subscribe:hover {
+  opacity: 1;
+}
