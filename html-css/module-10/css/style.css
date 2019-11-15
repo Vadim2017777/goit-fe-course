@@ -28,17 +28,18 @@ img {
 }
 
 .site-header {
-  
-  background-image:  -webkit-linear-gradient(90deg, rgba(252,227,138, 90%) 0%, rgba(243,129,129, 90%) 100%), -webkit-image-set(
-    url(../images/background_image/eagle-min.jpg) 1x,
-    url(../images/background_image/eagle@2x-min.jpg) 2x
-    );
+  background-image: -webkit-linear-gradient(
+      90deg,
+      rgba(252, 227, 138, 90%) 0%,
+      rgba(243, 129, 129, 90%) 100%
+    ),
+    -webkit-image-set(url(../images/background_image/eagle-min.jpg) 1x, url(../images/background_image/eagle@2x-min.jpg)
+          2x);
   min-height: 1000px;
   margin-bottom: 46px;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  
 }
 
 .site-navigation {
@@ -47,7 +48,6 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-
 }
 
 .menu {
@@ -69,7 +69,6 @@ img {
   transition: color 0.2s linear;
 }
 
-
 .menu-link {
   text-decoration: none;
   font-size: 1rem;
@@ -87,8 +86,8 @@ img {
   border-bottom: 2px solid currentColor;
 }
 
-.menu-svg{
-  display:block;
+.menu-svg {
+  display: block;
   fill: #fff;
   height: 16px;
   width: 18px;
@@ -96,31 +95,25 @@ img {
   transition: fill 0.2s linear;
 }
 
-
-.menu-svg:hover{
-  fill: #efc51a;;
+.menu-svg:hover {
+  fill: #efc51a;
 }
 
-
-
-
-
-.atraction{
+.atraction {
   text-align: center;
 }
 
-.attraction_item{
-  font-family: 'Kaushan Script', cursive;
+.attraction_item {
+  font-family: "Kaushan Script", cursive;
   font-size: 5.143rem;
   line-height: 1.2;
   font-weight: 400;
   color: #fff;
 }
 
-
-.attraction_name{
-  padding-bottom:  110px;
-  font-family: 'Montserrat', sans-serif;
+.attraction_name {
+  padding-bottom: 110px;
+  font-family: "Montserrat", sans-serif;
   font-size: 5.143rem;
   font-size: 10.71rem;
   line-height: 1.2;
@@ -129,8 +122,7 @@ img {
   color: #fff;
 }
 
-
-.button_attaction{
+.button_attaction {
   border: 3px solid #fff;
   outline: none;
   padding: 14px 32px;
@@ -140,17 +132,15 @@ img {
   line-height: 1.2;
   text-transform: uppercase;
   color: white;
-  background-color:transparent;
+  background-color: transparent;
   opacity: 0.8;
   transition: all 0.2s linear;
 }
 
-.button_attaction:hover{
+.button_attaction:hover {
   background-color: #f38181;
   opacity: 1;
 }
-
-
 
 /* SECTION amazing-services */
 
@@ -211,31 +201,22 @@ img {
   line-height: 1.2;
   text-transform: uppercase;
   color: rgb(153, 153, 153);
-  
 }
 
 .menu-azservices-item::before {
   display: inline-block;
   width: 80px;
   height: 31px;
-  background: center;
-  background-repeat: no-repeat;
   content: "";
-  
-
+  background: center center no-repeat;
 }
 
 .clock::before {
-
-  background-image: url('../images/icons/symbol-defs.svg#icon-ALARM-view-blue');
+  background-image: url(../images/icons/icons_svg/ALARM.svg);
 }
 
- 
-  
-
-
 .linegraph::before {
-  background: url(../images/icons/BOOK.svg);
+  background-image: url(../images/icons/icons_svg/LINE_GRAPH.svg);
 }
 .creativity::before {
   background-image: url(../images/icons/COMPUTER.png);
@@ -264,15 +245,10 @@ img {
   color: rgb(153, 153, 153);
 }
 
-
-
-
-
 /* SECTION TEAM */
 
 .our-team {
   margin-bottom: 50px;
-  
 }
 
 .text-ourteam {
