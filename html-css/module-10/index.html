@@ -11,13 +11,12 @@
     />
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/style.css" />
- 
   </head>
 
   <body>
     <header class="site-header">
       <nav class="site-navigation container">
-        <a href="#" class="logo-mogo"
+        <a href="#" class="site-logo"
           ><img
             srcset="images/icons/MoGo.png 86w, images/icons/MoGo@2x.png 177w"
             sizes="86px"
@@ -26,22 +25,22 @@
             height="23"
         /></a>
 
-        <ul class="menu">
-          <li class="menu-item"><a href="#" class="menu-link">About</a></li>
-          <li class="menu-item"><a href="#" class="menu-link">service</a></li>
-          <li class="menu-item"><a href="#" class="menu-link">work</a></li>
-          <li class="menu-item"><a href="#" class="menu-link">blog</a></li>
-          <li class="menu-item"><a href="#" class="menu-link">contact</a></li>
-          <li class="menu-item">
+        <ul class="site-navigation__list">
+          <li class="site-navigation__item"><a href="#" class="site-navigation__link">About</a></li>
+          <li class="site-navigation__item"><a href="#" class="site-navigation__link">service</a></li>
+          <li class="site-navigation__item"><a href="#" class="site-navigation__link">work</a></li>
+          <li class="site-navigation__item"><a href="#" class="site-navigation__link">blog</a></li>
+          <li class="site-navigation__item"><a href="#" class="site-navigation__link">contact</a></li>
+          <li class="site-navigation__item">
             <a href="#"
-              ><svg class="menu-svg">
+              ><svg class="site-navigation__svg">
                 <use href="images/icons/sprite.svg#SHOPPING_CART"></use>
               </svg>
             </a>
           </li>
-          <li class="menu-item">
+          <li class="site-navigation__item">
             <a href="#"
-              ><svg class="menu-svg">
+              ><svg class="site-navigation__svg">
                 <use href="images/icons/sprite.svg#MAGNIFYING-GLASS"></use>
               </svg>
             </a>
@@ -49,20 +48,20 @@
         </ul>
       </nav>
       <div class="atraction container">
-        <div class="attraction_item ">Creative Template</div>
-        <div class="attraction_name">
+        <div class="attraction__item">Creative Template</div>
+        <div class="attraction__name">
           Welcome <br />
           to MoGo
         </div>
-        <button class="button_attaction">Learn more</button>
+        <button class="button-learn">Learn more</button>
       </div>
     </header>
 
     <main>
       <section class="services container">
-        <div class="title-item amazing-services">
-          <span class="title-intro">We work with</span>
-          <h2 class="title-text">Amazing Services</h2>
+        <div class="section-headline amazing-services">
+          <span class="section__intro">We work with</span>
+          <h2 class="section__text">Amazing Services</h2>
         </div>
 
         <ul class="menu-azservices">
@@ -88,7 +87,6 @@
             </p>
           </li>
           <li class="menu-azservices-item seo">
-            
             <h3 class="menu-azservices-text">Creativity</h3>
             <p class="menu-azservices-paragraf">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -113,9 +111,9 @@
       </section>
 
       <section class="our-team container">
-        <div class="title-item our-team ">
-          <span class="title-intro">We work with</span>
-          <h2 class="title-text">Amazing Services</h2>
+        <div class="section-headline our-team ">
+          <span class="section__intro">We work with</span>
+          <h2 class="section__text">Amazing Services</h2>
         </div>
         <p class="text-ourteam">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -127,43 +125,34 @@
           <div class="card">
             <div class="image-wrapper">
               <img
-                src="images/teamphotos/image1.jpg"
-                alt="MATTHEW DIX"
                 class="card-image"
+                srcset="/images/teamphotos/image1-min.jpg 380w, images\teamphotos\image1@2x-min.jpg 940w"
+                sizes="380px"
+                src="/images/teamphotos/image1-min.jpg"
+                alt="team member image"
+                height="470"
               />
               <div class="card-overlay-top"></div>
               <div class="button-wraper">
                 <button class="btn facebook icon">
-                  <img
-                    src="images/icons/facebook.png"
-                    alt="facebook"
-                    width="13"
-                    height="26"
-                  />
+                  <svg class="social-icon">
+                    <use href="images/icons/sprite.svg#facebook"></use>
+                  </svg>
                 </button>
                 <button class="btn facebook">
-                  <img
-                    src="images/icons/twitter.png"
-                    alt="twitter"
-                    width="26"
-                    height="22"
-                  />
+                  <svg class="social-icon">
+                    <use href="images/icons/sprite.svg#twitter"></use>
+                  </svg>
                 </button>
                 <button class="btn pinterest">
-                  <img
-                    src="images/icons/pinterest.png"
-                    alt="twitter"
-                    width="21"
-                    height="26"
-                  />
+                  <svg class="social-icon">
+                    <use href="images/icons/sprite.svg#pinterest"></use>
+                  </svg>
                 </button>
                 <button class="btn instagram">
-                  <img
-                    src="images/icons/instagram.png"
-                    alt="twitter"
-                    width="21"
-                    height="26"
-                  />
+                  <svg class="social-icon">
+                    <use href="images/icons/sprite.svg#instagram"></use>
+                  </svg>
                 </button>
               </div>
             </div>
@@ -176,43 +165,35 @@
           <div class="card">
             <div class="image-wrapper">
               <img
-                src="images/teamphotos/image2.jpg"
+                srcset="
+                  images/teamphotos/image2-min.jpg 380w, images/teamphotos/image2@2x-min.jpg 760w"
+                sizes="380px"
+                src="images/teamphotos/image2-min.jpg"
                 alt="Christopher Campbell"
                 class="card-image"
+                height="470"
               />
               <div class="card-overlay-top"></div>
               <div class="button-wraper">
                 <button class="btn facebook icon">
-                  <img
-                    src="images/icons/facebook.png"
-                    alt="facebook"
-                    width="13"
-                    height="26"
-                  />
+                  <svg class="social-icon">
+                    <use href="images/icons/sprite.svg#facebook"></use>
+                  </svg>
                 </button>
                 <button class="btn facebook">
-                  <img
-                    src="images/icons/twitter.png"
-                    alt="twitter"
-                    width="26"
-                    height="22"
-                  />
+                  <svg class="social-icon">
+                    <use href="images/icons/sprite.svg#twitter"></use>
+                  </svg>
                 </button>
                 <button class="btn pinterest">
-                  <img
-                    src="images/icons/pinterest.png"
-                    alt="twitter"
-                    width="21"
-                    height="26"
-                  />
+                  <svg class="social-icon">
+                    <use href="images/icons/sprite.svg#pinterest"></use>
+                  </svg>
                 </button>
                 <button class="btn instagram">
-                  <img
-                    src="images/icons/instagram.png"
-                    alt="twitter"
-                    width="21"
-                    height="26"
-                  />
+                  <svg class="social-icon">
+                    <use href="images/icons/sprite.svg#instagram"></use>
+                  </svg>
                 </button>
               </div>
             </div>
@@ -224,43 +205,37 @@
           <div class="card">
             <div class="image-wrapper">
               <img
-                src="images/teamphotos/image3.jpg"
+                srcset="
+                  images/teamphotos/image3-min.jpg    380w,
+                  images/teamphotos/image3@2x-min.jpg 760w
+                "
+                sizes="380px"
+                src="images/teamphotos/image3-min.jpg"
                 alt="Michael Fertig"
                 class="card-image"
+                height="470"
               />
               <div class="card-overlay-top"></div>
               <div class="button-wraper">
                 <button class="btn facebook icon">
-                  <img
-                    src="images/icons/facebook.png"
-                    alt="facebook"
-                    width="13"
-                    height="26"
-                  />
+                  <svg class="social-icon">
+                    <use href="images/icons/sprite.svg#facebook"></use>
+                  </svg>
                 </button>
                 <button class="btn facebook">
-                  <img
-                    src="images/icons/twitter.png"
-                    alt="twitter"
-                    width="26"
-                    height="22"
-                  />
+                  <svg class="social-icon">
+                    <use href="images/icons/sprite.svg#twitter"></use>
+                  </svg>
                 </button>
                 <button class="btn pinterest">
-                  <img
-                    src="images/icons/pinterest.png"
-                    alt="twitter"
-                    width="21"
-                    height="26"
-                  />
+                  <svg class="social-icon">
+                    <use href="images/icons/sprite.svg#pinterest"></use>
+                  </svg>
                 </button>
                 <button class="btn instagram">
-                  <img
-                    src="images/icons/instagram.png"
-                    alt="twitter"
-                    width="21"
-                    height="26"
-                  />
+                  <svg class="social-icon">
+                    <use href="images/icons/sprite.svg#instagram"></use>
+                  </svg>
                 </button>
               </div>
             </div>

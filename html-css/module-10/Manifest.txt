@@ -1,0 +1,80 @@
+link
+
+list
+
+site haeder
+site-navigation container
+site-logo 
+
+menu -site-navigation__list
+menu-item -site-navigation__item
+menu-link -site-navigation__link
+menu-svg -site-navigation__svg
+
+
+atraction container
+attraction__item
+attraction__name
+attaction__button
+
+
+
+services container
+ title-item  -section-headline
+services-item_margin-bottom
+title-intro- section__intro
+services__text
+
+services__list
+services__list__item 
+services__list__icon_clock
+services__list__icon_linegraph
+services__list__icon_creativity
+services__list__icon_seo
+services__list__icon_css-html
+services__list__icon_digital
+services__list__text
+services__list__paragraff 
+
+team
+team__title 
+team__title_margin-bottom
+team__intro
+team__headline
+team__text
+team__paragraff
+
+team__cards
+team__card
+team__card-image
+team__card-overlay
+team__card-buttons
+team__card-button
+team__card-button_icon
+team__card-button-iconsvg_faceboook
+team__card-button-iconsvg_twitter
+team__card-button-iconsvg_pinterest
+team__card-button-iconsvg_faceboook
+team__card-button-iconsvg_instagram
+team__card-headline
+team__card-headline_name
+team__card-headline_occupation
+
+footer__wrapper
+site__info
+site-info__word-selection
+user-email
+user-email__input
+button-subscribe
+
+
+
+
+
+
+
+
+
+
+
+ 
