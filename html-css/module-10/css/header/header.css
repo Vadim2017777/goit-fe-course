@@ -1,10 +1,5 @@
 .site-header {
-  background-image: -webkit-linear-gradient(
-      90deg,
-      rgba(252, 227, 138, 90%) 0%,
-      rgba(243, 129, 129, 90%) 100%
-    ),
-    url(../../images/background_image/eagle-min.jpg);
+  background-image: url(../../images/background_image/eagle-min.jpg);
   min-height: 1000px;
   margin-bottom: 46px;
   background-repeat: no-repeat;
@@ -12,13 +7,11 @@
   background-size: cover;
 }
 
-@media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 2/1), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+@media (-webkit-min-device-pixel-ratio: 2),
+  (-o-min-device-pixel-ratio: 2/1),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
   .site-header {
-    background-image: -webkit-linear-gradient(
-        90deg,
-        rgba(252, 227, 138, 90%) 0%,
-        rgba(243, 129, 129, 90%) 100%
-      ),
-      url(../../images/background_image/eagle@2x-min.jpg);
+    background-image: url(../../images/background_image/eagle@2x-min.jpg);
   }
 }
