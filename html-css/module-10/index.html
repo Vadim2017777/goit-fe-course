@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Homework6</title>
+    <title>Homework10</title>
     <link
       href="https://fonts.googleapis.com/css?family=Kaushan+Script|Montserrat:400,700|Roboto:300i,400&display=swap"
       rel="stylesheet"
@@ -25,12 +25,22 @@
             height="23"
         /></a>
 
-        <ul class="site-navigation__list">
-          <li class="site-navigation__item"><a href="#" class="site-navigation__link">About</a></li>
-          <li class="site-navigation__item"><a href="#" class="site-navigation__link">service</a></li>
-          <li class="site-navigation__item"><a href="#" class="site-navigation__link">work</a></li>
-          <li class="site-navigation__item"><a href="#" class="site-navigation__link">blog</a></li>
-          <li class="site-navigation__item"><a href="#" class="site-navigation__link">contact</a></li>
+        <ul class="list site-navigation__list">
+          <li class="site-navigation__item">
+            <a href="#" class="site-navigation__link">About</a>
+          </li>
+          <li class="site-navigation__item">
+            <a href="#" class="site-navigation__link">service</a>
+          </li>
+          <li class="site-navigation__item">
+            <a href="#" class="site-navigation__link">work</a>
+          </li>
+          <li class="site-navigation__item">
+            <a href="#" class="site-navigation__link">blog</a>
+          </li>
+          <li class="site-navigation__item">
+            <a href="#" class="site-navigation__link">contact</a>
+          </li>
           <li class="site-navigation__item">
             <a href="#"
               ><svg class="site-navigation__svg">
@@ -53,157 +63,163 @@
           Welcome <br />
           to MoGo
         </div>
-        <button class="button-learn">Learn more</button>
+        <button class="button button-learn">Learn more</button>
       </div>
     </header>
-
+    <!-- AMAZING-SERVICES SECTION -->
     <main>
-      <section class="services container">
-        <div class="section-headline amazing-services">
+      <section class="amzing-services container">
+        <div class="section__headline  section__headline_mb">
           <span class="section__intro">We work with</span>
           <h2 class="section__text">Amazing Services</h2>
         </div>
 
-        <ul class="menu-azservices">
-          <li class="menu-azservices-item clock">
-            <h3 class="menu-azservices-text">Photography</h3>
-            <p class="menu-azservices-paragraf">
+        <ul class="list services">
+          <li class="services__item  services__icon_clock">
+            <h3 class="services__item-headline">Photography</h3>
+            <p class="services__item-paragraph">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor.
             </p>
           </li>
-          <li class="menu-azservices-item linegraph">
-            <h3 class="menu-azservices-text">Web Design</h3>
-            <p class="menu-azservices-paragraf">
+          <li class="services__item services__icon_linegraph">
+            <h3 class="services__item-headline">Web Design</h3>
+            <p class="services__item-paragraph">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor.
             </p>
           </li>
-          <li class="menu-azservices-item creativity">
-            <h3 class="menu-azservices-text">Creativity</h3>
-            <p class="menu-azservices-paragraf">
+          <li class="services__item services__icon_creativity">
+            <h3 class="services__item-headline">Creativity</h3>
+            <p class="services__item-paragraph">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor.
             </p>
           </li>
-          <li class="menu-azservices-item seo">
-            <h3 class="menu-azservices-text">Creativity</h3>
-            <p class="menu-azservices-paragraf">
+          <li class="services__item services__icon_seo">
+            <h3 class="services__item-headline">Creativity</h3>
+            <p class="services__item-paragraph">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor.
             </p>
           </li>
-          <li class="menu-azservices-item css-html">
-            <h3 class="menu-azservices-text">css/html</h3>
-            <p class="menu-azservices-paragraf">
+          <li class="services__item  services__icon_css-html">
+            <h3 class="services__item-headline">css/html</h3>
+            <p class="services__item-paragraph">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor.
             </p>
           </li>
-          <li class="menu-azservices-item digital">
-            <h3 class="menu-azservices-text">digital</h3>
-            <p class="menu-azservices-paragraf">
+          <li class="services__item  services__icon_digital">
+            <h3 class="services__item-headline">digital</h3>
+            <p class="services__item-paragraph">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor.
             </p>
           </li>
         </ul>
       </section>
-
-      <section class="our-team container">
-        <div class="section-headline our-team ">
-          <span class="section__intro">We work with</span>
-          <h2 class="section__text">Amazing Services</h2>
+      <!-- TEAM SECTION -->
+      <section class="team team_mb container">
+        <div class="section__headline section__headline_mb ">
+          <span class="section__intro">Who we are</span>
+          <h2 class="section__text">Meet our team</h2>
         </div>
-        <p class="text-ourteam">
+        <p class="team__paragraph">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
           minim veniam, quis nostrud exercitation ullamco laboris nisi ut
           aliquip ex ea commodo consequat.
         </p>
-        <div class="cards">
-          <div class="card">
-            <div class="image-wrapper">
+        <div class="team-cards">
+          <div class="team__card">
+            <div class="team__image-wrapper">
               <img
-                class="card-image"
-                srcset="images/teamphotos/image1-min.jpg 380w, images\teamphotos\image1@2x-min.jpg 940w"
+                class="team__card-image"
+                srcset="
+                  images/teamphotos/image1-min.jpg    380w,
+                  images\teamphotos\image1@2x-min.jpg 940w
+                "
                 sizes="380px"
                 src="images/teamphotos/image1-min.jpg"
                 alt="team member image"
                 height="470"
               />
-              <div class="card-overlay-top"></div>
-              <div class="button-wraper">
-                <button class="btn facebook icon">
-                  <svg class="social-icon">
+              <div class="team__card-overlay"></div>
+              <div class="team__card-buttons">
+                <button class="team__card-button">
+                  <svg class="team__card-icon">
                     <use href="images/icons/sprite.svg#facebook"></use>
                   </svg>
                 </button>
-                <button class="btn facebook">
-                  <svg class="social-icon">
+                <button class="team__card-button">
+                  <svg class="team__card-icon">
                     <use href="images/icons/sprite.svg#twitter"></use>
                   </svg>
                 </button>
-                <button class="btn pinterest">
-                  <svg class="social-icon">
+                <button class="team__card-button">
+                  <svg class="team__card-icon">
                     <use href="images/icons/sprite.svg#pinterest"></use>
                   </svg>
                 </button>
-                <button class="btn instagram">
-                  <svg class="social-icon">
+                <button class="team__card-button">
+                  <svg class="team__card-icon">
                     <use href="images/icons/sprite.svg#instagram"></use>
                   </svg>
                 </button>
               </div>
             </div>
-
-            <div class="card-text">
-              <p class="card-name">Mattew Dix</p>
-              <p class="card-occupation">Graphic Design</p>
+            <div class="team__card-headline">
+              <p class="team__card-name">Mattew Dix</p>
+              <p class="team__card-occupation">Graphic Design</p>
             </div>
           </div>
-          <div class="card">
-            <div class="image-wrapper">
+
+          <div class="team__card">
+            <div class="team__image-wrapper">
               <img
                 srcset="
-                  images/teamphotos/image2-min.jpg 380w, images/teamphotos/image2@2x-min.jpg 760w"
+                  images/teamphotos/image2-min.jpg    380w,
+                  images/teamphotos/image2@2x-min.jpg 760w
+                "
                 sizes="380px"
                 src="images/teamphotos/image2-min.jpg"
                 alt="Christopher Campbell"
-                class="card-image"
+                class="team__card-image"
                 height="470"
               />
-              <div class="card-overlay-top"></div>
-              <div class="button-wraper">
-                <button class="btn facebook icon">
-                  <svg class="social-icon">
+              <div class="team__card-overlay"></div>
+              <div class="team__card-buttons">
+                <button class="team__card-button">
+                  <svg class="team__card-icon">
                     <use href="images/icons/sprite.svg#facebook"></use>
                   </svg>
                 </button>
-                <button class="btn facebook">
-                  <svg class="social-icon">
+                <button class="team__card-button">
+                  <svg class="team__card-icon">
                     <use href="images/icons/sprite.svg#twitter"></use>
                   </svg>
                 </button>
-                <button class="btn pinterest">
-                  <svg class="social-icon">
+                <button class="team__card-button">
+                  <svg class="team__card-icon">
                     <use href="images/icons/sprite.svg#pinterest"></use>
                   </svg>
                 </button>
-                <button class="btn instagram">
-                  <svg class="social-icon">
+                <button class="team__card-button">
+                  <svg class="team__card-icon">
                     <use href="images/icons/sprite.svg#instagram"></use>
                   </svg>
                 </button>
               </div>
             </div>
-            <div class="card-text">
-              <p class="card-name">Christopher Campbell</p>
-              <p class="card-occupation">Branding/UX design</p>
+            <div class="team__card-headline">
+              <p class="team__card-name">Mattew Dix</p>
+              <p class="team__card-occupation">Graphic Design</p>
             </div>
           </div>
-          <div class="card">
-            <div class="image-wrapper">
+
+          <div class="team__card">
+            <div class="team__image-wrapper">
               <img
                 srcset="
                   images/teamphotos/image3-min.jpg    380w,
@@ -212,57 +228,57 @@
                 sizes="380px"
                 src="images/teamphotos/image3-min.jpg"
                 alt="Michael Fertig"
-                class="card-image"
+                class="team__card-image"
                 height="470"
               />
-              <div class="card-overlay-top"></div>
-              <div class="button-wraper">
-                <button class="btn facebook icon">
-                  <svg class="social-icon">
+              <div class="team__card-overlay"></div>
+              <div class="team__card-buttons">
+                <button class="team__card-button">
+                  <svg class="team__card-icon">
                     <use href="images/icons/sprite.svg#facebook"></use>
                   </svg>
                 </button>
-                <button class="btn facebook">
-                  <svg class="social-icon">
+                <button class="team__card-button">
+                  <svg class="team__card-icon">
                     <use href="images/icons/sprite.svg#twitter"></use>
                   </svg>
                 </button>
-                <button class="btn pinterest">
-                  <svg class="social-icon">
+                <button class="team__card-button">
+                  <svg class="team__card-icon">
                     <use href="images/icons/sprite.svg#pinterest"></use>
                   </svg>
                 </button>
-                <button class="btn instagram">
-                  <svg class="social-icon">
+                <button class="team__card-button">
+                  <svg class="team__card-icon">
                     <use href="images/icons/sprite.svg#instagram"></use>
                   </svg>
                 </button>
               </div>
             </div>
-            <div class="card-text">
-              <p class="card-name">Michael Fertig</p>
-              <p class="card-occupation">Developer</p>
+            <div class="team__card-headline">
+              <p class="team__card-name">Mattew Dix</p>
+              <p class="team__card-occupation">Graphic Design</p>
             </div>
           </div>
         </div>
       </section>
-
-      <footer class="container">
-        <div class="footer-wrapper">
-          <span class="footer-inf"
-            >© 2016 MoGo free PSD template by
-            <span class="footer-word">Laaqiq</span>
-          </span>
-
-          <form class="email-input" action="#">
-            <input type="email" placeholder="Your Email..." />
-
-            <button class="Subscribe">
-              Subscribe
-            </button>
-          </form>
-        </div>
-      </footer>
     </main>
+
+<!-- FOOTER -->
+
+    <footer class="container">
+      <div class="footer-wrapper">
+        <span class="site-info"
+          >© 2016 MoGo free PSD template by
+          <span class="site-info__word_red">Laaqiq</span>
+        </span>
+        <form class="user-email" action="#">
+          <input type="email" placeholder="Your Email..." />
+          <button class="button button-subscribe">
+            Subscribe
+          </button>
+        </form>
+      </div>
+    </footer>
   </body>
 </html>
