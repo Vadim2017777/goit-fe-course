@@ -1,0 +1,12 @@
+.button-subscribe {
+    border: none;
+    background-color: rgb(149, 225, 211);
+    opacity: 0.8;
+    -webkit-transition: opacity 0.2s linear;
+    -o-transition: opacity 0.2s linear;
+    transition: opacity 0.2s linear;
+  }
+  
+  .button-subscribe:hover {
+    opacity: 1;
+  }

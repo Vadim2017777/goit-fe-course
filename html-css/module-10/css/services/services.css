@@ -1,0 +1,100 @@
+.section__headline {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+  }
+  
+  .section__intro {
+    display: block;
+    padding-bottom: 20px;
+    font-family: "Kaushan Script", cursive;
+    font-size: 1.143rem;
+    line-height: 1.2;
+  }
+  
+  .section__text {
+    display: block;
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+    font-size: 2.143rem;
+    line-height: 1.2;
+  }
+  
+  .section__text::after {
+    display: block;
+    background-color: rgb(243, 129, 129);
+    margin: 40px auto 0;
+    width: 60px;
+    height: 3px;
+    content: "";
+  }
+  
+  .section__headline_mb {
+    margin-bottom: 62px;
+  }
+  
+  .services__list {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  
+  .services__item {
+    -ms-flex-preferred-size: 380px;
+        flex-basis: 380px;
+    min-height: 170px;
+  }
+  
+  .services__item-headline {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1rem;
+    line-height: 1.2;
+    text-transform: uppercase;
+    color: rgb(153, 153, 153);
+  }
+  
+  .services__item::before {
+    display: inline-block;
+    width: 80px;
+    height: 31px;
+    content: "";
+    background: center center no-repeat;
+  }
+  
+  .services__icon_clock::before {
+    background-image: url(../../images/icons/icons_svg/ALARM.svg);
+  }
+  
+  .services__icon_linegraph::before {
+    background-image: url(../../images/icons/icons_svg/LINE_GRAPH.svg);
+  }
+  .services__icon_creativity::before {
+    background-image: url(../../images/icons/icons_svg/COMPUTER.svg);
+  }
+  
+  .services__icon_seo::before {
+    background-image: url(../../images/icons/icons_svg/BOOK.svg);
+  }
+  
+  .services__icon_css-html::before {
+    background-image: url(../../images/icons/icons_svg/HOME.svg);
+  }
+  
+  .services__icon_digital::before {
+    background-image: url(../../images/icons/icons_svg/IMAGE.svg);
+  }
+  
+  .services__item-paragraph {
+    display: inline-block;
+    vertical-align: top;
+    padding-left: 80px;
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+    font-size: 1.071rem;
+    line-height: 24px;
+    color: rgb(153, 153, 153);
+  }

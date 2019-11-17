@@ -1,0 +1,18 @@
+.site-header {
+    background-image: -webkit-linear-gradient(
+        90deg,
+        rgba(252, 227, 138, 90%) 0%,
+        rgba(243, 129, 129, 90%) 100%
+      ),
+      -webkit-image-set(url(../../images/background_image/eagle-min.jpg) 1x, url(../../images/background_image/eagle@2x-min.jpg)
+            2x);
+    min-height: 1000px;
+    margin-bottom: 46px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  
+  
+  
+  
