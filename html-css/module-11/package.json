@@ -1,0 +1,21 @@
+{
+  "name": "module-11",
+  "version": "1.0.0",
+  "description": "My first project",
+  "main": "index.js",
+  "scripts": {
+"scss":"node-sass src/scss/style.scss -o css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "\u0016\u0016"
+  },
+  "keywords": [
+    "https://github.com/Vadim2017777/goit"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^4.13.0"
+  }
+}
