@@ -1,0 +1,64 @@
+.user-email {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 380px;
+    height: 42px;
+  }
+  
+  .user-email input {
+    padding: 0;
+    border: 1px solid rgb(229, 229, 229);
+    height: 40px;
+    width: 300px;
+  }
+  
+  .user-email input::-webkit-input-placeholder {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+    font-size: 1rem;
+    line-height: 20px;
+    text-indent: 1rem;
+    color: rgb(204, 204, 204);
+  }
+  
+  .user-email input::-moz-placeholder {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+    font-size: 1rem;
+    line-height: 20px;
+    text-indent: 1rem;
+    color: rgb(204, 204, 204);
+  }
+  
+  .user-email input:-ms-input-placeholder {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+    font-size: 1rem;
+    line-height: 20px;
+    text-indent: 1rem;
+    color: rgb(204, 204, 204);
+  }
+  
+  .user-email input::-ms-input-placeholder {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+    font-size: 1rem;
+    line-height: 20px;
+    text-indent: 1rem;
+    color: rgb(204, 204, 204);
+  }
+  
+  .user-email input::placeholder {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+    font-size: 1rem;
+    line-height: 20px;
+    text-indent: 1rem;
+    color: rgb(204, 204, 204);
+  }

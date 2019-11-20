@@ -1,0 +1,13 @@
+.button-learn {
+    border: 3px solid #fff;
+    background-color: transparent;
+    opacity: 0.8;
+    -webkit-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+  }
+  
+  .button-learn:hover {
+    background-color: #f38181;
+    opacity: 1;
+  }

@@ -1,0 +1,174 @@
+.team_mb {
+    margin-bottom: 85px;
+  }
+  .team__paragraph {
+    margin: auto;
+    text-align: center;
+    width: 949px;
+    min-height: 136px;
+    font-family: "Roboto", sans-serif;
+    font-size: 1.071rem;
+    line-height: 24px;
+    color: rgb(153, 153, 153);
+  }
+  
+  .team__cards {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  
+  .team__card {
+    display: block;
+    width: 380px;
+    height: 540px;
+  }
+  
+  .team__card-overlay {
+    position: absolute;
+    width: 380px;
+    height: 470px;
+    background-image: -webkit-gradient(
+      linear,
+      left bottom, left top,
+      from(rgb(252, 227, 138)),
+      to(rgb(243, 129, 129))
+    );
+    background-image: -o-linear-gradient(
+      bottom,
+      rgb(252, 227, 138) 0%,
+      rgb(243, 129, 129) 100%
+    );
+    background-image: linear-gradient(
+      0deg,
+      rgb(252, 227, 138) 0%,
+      rgb(243, 129, 129) 100%
+    );
+    opacity: 0;
+    z-index: 3;
+    -webkit-transition: -webkit-transform 0.2s linear;
+    transition: -webkit-transform 0.2s linear;
+    -o-transition: transform 0.2s linear;
+    transition: transform 0.2s linear;
+    transition: transform 0.2s linear, -webkit-transform 0.2s linear;
+    cursor: pointer;
+  }
+  
+  .team__card:hover .team__card-overlay {
+    -webkit-transform: translateX(-10px) translateY(-10px);
+        -ms-transform: translateX(-10px) translateY(-10px);
+            transform: translateX(-10px) translateY(-10px);
+    opacity: 0.9;
+  }
+  
+  .team__image-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 380px;
+    height: 470px;
+    background-color: rgb(149, 225, 211);
+    z-index: 1;
+  }
+  
+  .team__card-image {
+    position: absolute;
+    width: auto;
+    height: 470px;
+    z-index: 2;
+    -webkit-transition: -webkit-transform 0.2s linear;
+    transition: -webkit-transform 0.2s linear;
+    -o-transition: transform 0.2s linear;
+    transition: transform 0.2s linear;
+    transition: transform 0.2s linear, -webkit-transform 0.2s linear;
+  }
+  
+  .team__card:hover .team__card-image {
+    -webkit-transform: translateX(-10px) translateY(-10px);
+        -ms-transform: translateX(-10px) translateY(-10px);
+            transform: translateX(-10px) translateY(-10px);
+  }
+  
+  .team__card-buttons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    opacity: 0;
+    z-index: 4;
+  }
+  
+  .team__card-button {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 50px;
+    height: 50px;
+    background-color: rgb(252, 227, 138);
+    padding: 0;
+    border: none;
+    border-right: 1px solid rgb(249, 189, 135);
+    color: white;
+    outline: none;
+    cursor: pointer;
+    -webkit-transition: background-color 0.2s linear;
+    -o-transition: background-color 0.2s linear;
+    transition: background-color 0.2s linear;
+  }
+  
+  .team__card:hover .team__card-buttons {
+    opacity: 1;
+  }
+  
+  .team__card-button:hover {
+    background-color: rgb(149, 225, 211);
+  }
+  
+  .team__card-icon {
+    display: block;
+    width: 26px;
+    height: 22px;
+    fill: #f38181;
+  }
+  
+  .team__card-button:hover .team__card-icon {
+    fill: #fff;
+  }
+  
+  .team__card-headline {
+    text-align: center;
+  }
+  
+  .team__card-name {
+    margin: 0;
+    padding: 26px 0 10px 0;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1rem;
+    line-height: 1.2;
+    text-transform: uppercase;
+    color: #333333;
+  }
+  
+  .team__card-occupation {
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+    font-size: 1.071rem;
+    line-height: 1.2;
+    color: #999999;
+  }
