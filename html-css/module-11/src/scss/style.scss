@@ -1,5 +1,40 @@
-$prime-colore:teal;
+$prime-colore:rgb(101, 134, 101);
+$prime-font-stack: "PT Sans", "Roboto", "Arial", sans-serif;
+$prime-fontcolore:red;
+$primary-acentcolor:grey;
 
 body{
-    background: $prime-colore;
+    background-color: $prime-colore;
+    font-family: $prime-font-stack;
+    color:  $prime-fontcolore;
+    font-size: 40px;
+    line-height: 12px;
+
 }
+
+%button{
+    display: inline-block;
+    color:$prime-fontcolore;
+    border:none;
+    outline: none;
+    text-decoration: none;
+}
+
+.link{
+    width:90px;
+    height: 90px;
+    display: inline-block;
+    color:$prime-fontcolore;
+    border:none;
+    outline: none;
+    text-decoration: none;
+    &:hover{
+        color: gold;;
+    }
+   }
+
+   .WEB{
+       @extend %button;
+   }
+
+

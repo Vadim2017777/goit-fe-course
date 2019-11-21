@@ -1,2 +1,24 @@
 body {
-  background: teal; }
+  background-color: #658665;
+  font-family: "PT Sans", "Roboto", "Arial", sans-serif;
+  color: red;
+  font-size: 40px;
+  line-height: 12px; }
+
+.WEB {
+  display: inline-block;
+  color: red;
+  border: none;
+  outline: none;
+  text-decoration: none; }
+
+.link {
+  width: 90px;
+  height: 90px;
+  display: inline-block;
+  color: red;
+  border: none;
+  outline: none;
+  text-decoration: none; }
+  .link:hover {
+    color: gold; }

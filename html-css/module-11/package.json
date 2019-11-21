@@ -4,7 +4,9 @@
   "description": "My first project",
   "main": "index.js",
   "scripts": {
-"scss":"node-sass src/scss/style.scss -o css"
+    "scss:build": "node-sass src/scss/style.scss -o css",
+    "scss:watch": "node-sass --watch src/scss/style.scss -o css",
+    "build":"npm run scss:build && npm run scss:watch" 
   },
   "repository": {
     "type": "git",
