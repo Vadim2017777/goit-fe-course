@@ -37,4 +37,12 @@ body{
        @extend %button;
    }
 
+   @mixin font-settings($size, $height){
+    font-size:$size;
+    line-height: $height;
+  }
 
+h1{
+    @include font-settings(50px, 100px)
+}
+  
