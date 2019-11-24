@@ -1,0 +1,5 @@
+.services__list {
+  @extend %list;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}

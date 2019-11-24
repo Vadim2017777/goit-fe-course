@@ -1,0 +1,36 @@
+.nav-menu {
+  @include center-flex('flend-spbeet');
+  @extend %list;
+  flex-basis: 490px;
+}
+
+.nav-menu__link {
+  text-decoration: none;
+  font-size: $main-textsize;
+  line-height: 16.8px;
+  font-family: $secondary-font-stack;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: $primary-white-color;
+  transition: all 0.2s linear;
+  padding-bottom: 10px;
+  border-bottom: 2px solid transparent;
+
+  &:hover {
+    color: $color-for-navhover;
+    border-color: currentColor;
+  }
+}
+
+.nav-menu__svg {
+  display: block;
+  fill: $primary-white-color;
+  height: 16px;
+  width: 18px;
+  line-height: 32px;
+  transition: fill 0.2s linear;
+
+  &:hover {
+    fill: $color-for-navhover;
+  }
+}
