@@ -17,9 +17,10 @@
 }
 
 
-@mixin bgcenter {
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+@mixin bg-image($path, $size, $repeat, $pos){
+  background-image: url($path);
+  background-size: $size;
+  background-repeat: $repeat;
+  background-position: $pos;
 
 }

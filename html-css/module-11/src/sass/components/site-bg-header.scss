@@ -1,0 +1,16 @@
+.site-header {
+  @include bg-image(
+    '../images/background_image/eagle-min.jpg',
+    cover,
+    no-repeat,
+    center
+  );
+  min-height: 1000px;
+  margin-bottom: 46px;
+}
+
+@media (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .site-header {
+    background-image: url(../images/background_image/eagle@2x-min.jpg);
+  }
+}
