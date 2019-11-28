@@ -1,0 +1,172 @@
+/* * {
+  outline: 1px solid grey;
+} */
+
+html,
+body {
+  font-size: 14px;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before *::after {
+  box-sizing: inherit;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  width: 900px;
+  height: 200px;
+  padding-top: 80px;
+  list-style: none;
+  margin: auto;
+  padding-left: 0;
+  font-size: 0;
+}
+
+.navbar__item {
+  margin: 50px;
+}
+.navbar__button {
+  display: inline-block;
+  position: relative;
+
+  width: 50px;
+  height: 50px;
+  margin: 0 auto;
+
+  border-radius: 50%;
+  background-color: rgba(17, 0, 255, 0.363);
+  transition: all 0.5s;
+  box-shadow: 0 0 0 0 rgba(222, 228, 233, 0.5);
+  animation: pulse 1.5s infinite;
+}
+
+.navbar__button:hover {
+  animation: none;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(0.9);
+  }
+  70% {
+    transform: scale(1);
+    box-shadow: 0 0 0 10px rgba(222, 228, 233, 0.5);
+  }
+  100% {
+    transform: scale(0.9);
+    box-shadow: 0 0 0 0 rgba(222, 228, 233, 0);
+  }
+}
+
+.overlay {
+  display: block;
+  position: relative;
+  width: 50px;
+  height: 50px;
+  margin: 0 auto;
+  border-radius: 50%;
+  background-color: rgb(231, 224, 121);
+  transition: all 0.5s;
+  opacity: 0;
+}
+
+.navbar__button_cross,
+.navbar__button_cross::before,
+.navbar__button_cross::after {
+  display: inline-block;
+  position: absolute;
+  width: 25px;
+  height: 1px;
+  top: 50%;
+  left: 50%;
+  margin-top: -0.5px;
+  margin-left: -12.5px;
+  transition: all 0.5s;
+  background: black;
+}
+
+.navbar__button_cross::before,
+.navbar__button_cross::after {
+  content: "";
+}
+
+.navbar__button_cross::before {
+  transform: translateY(-5px);
+}
+
+.navbar__button_cross:after {
+  transform: translateY(+5px);
+}
+
+.navbar__button:hover .navbar__button_cross {
+  background: transparent;
+}
+
+.navbar__button:hover .navbar__button_cross::after {
+  transform: rotate(135deg);
+}
+
+.navbar__button:hover .navbar__button_cross::before {
+  transform: rotate(-135deg);
+}
+
+.navbar__button:hover .overlay {
+  opacity: 1;
+}
+
+.navbar__button:hover .overlay {
+  opacity: 1;
+}
+
+/* Button Arrow */
+.navbar__button_arrow,
+.navbar__button_arrow::before,
+.navbar__button_arrow::after {
+  display: inline-block;
+  position: absolute;
+  width: 25px;
+  height: 1px;
+  top: 50%;
+  left: 50%;
+  margin-top: -0.5px;
+  margin-left: -12.5px;
+  transition: all 0.3s;
+  background: black;
+}
+
+.navbar__button_arrow::before,
+.navbar__button_arrow::after {
+  content: "";
+}
+
+.navbar__button_arrow::before {
+  transform: translateY(-5px);
+}
+
+.navbar__button_arrow:after {
+  transform: translateY(+5px);
+}
+
+.navbar__button:hover .navbar__button_arrow::after {
+  transform: rotate(35deg);
+  transform-origin: left top;
+  width: 10px;
+}
+
+.navbar__button:hover .navbar__button_arrow::before {
+  transform: rotate(-35deg);
+  transform-origin: left top;
+  width: 10px;
+}
