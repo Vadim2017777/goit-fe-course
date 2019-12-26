@@ -1,0 +1,55 @@
+.site-header {
+  padding-top: 26px;
+  margin-bottom: 54px;
+}
+
+.site-navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.humburger-button {
+  @extend %button;
+  display: block;
+  position: relative;
+  width: 24px;
+  height: 12px;
+  background-color: transparent;
+
+  &_line {
+    display: inline-block;
+    position: absolute;
+    width: 24px;
+    height: 2px;
+    top: 50%;
+    left: 0%;
+    background: $primary-black-color;
+  }
+
+  &::before {
+    display: inline-block;
+    position: absolute;
+    content: '';
+    width: 24px;
+    height: 2px;
+    top: 0%;
+    left: 0%;
+    margin-top: 0px;
+    margin-left: 0px;
+    background: $primary-black-color;
+  }
+
+  &::after {
+    display: inline-block;
+    position: absolute;
+    content: '';
+    width: 24px;
+    height: 2px;
+    top: 100%;
+    left: 0%;
+    margin-top: 0px;
+    margin-left: 0px;
+    background: $primary-black-color;
+  }
+}

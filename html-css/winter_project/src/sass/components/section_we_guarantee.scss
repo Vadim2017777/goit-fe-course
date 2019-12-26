@@ -1,0 +1,37 @@
+.title-text {
+  margin: 0 0 30px 0;
+  font-size: 1.429rem;
+  line-height: 29px;
+  font-weight: 800;
+
+  &__paragraph {
+    margin: 0 0 36px 0;
+    font-size: 1.071rem;
+    line-height: 20px;
+    font-weight: 700;
+
+    &--grey {
+      color: $primary-grey-color;
+    }
+
+    &--orange {
+      color: $primary-orange-color;
+    }
+  }
+}
+
+.We_guarantee {
+  margin: 0 auto;
+}
+
+.button-guarantee-wrapper {
+  text-align: center;
+}
+
+.button-garantee {
+  @extend %button;
+  display: inline-block;
+  height: 44px;
+  padding: 0 12px;
+  background-color: $primary-orange-color;
+}
