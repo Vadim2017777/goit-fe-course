@@ -20,18 +20,49 @@
   }
 }
 
-.We_guarantee {
-  margin: 0 auto;
-}
-
-.button-guarantee-wrapper {
-  text-align: center;
-}
-
 .button-garantee {
   @extend %button;
-  display: inline-block;
+  display: block;
+  margin: 0 auto 36px;
   height: 44px;
   padding: 0 12px;
   background-color: $primary-orange-color;
+  font-size: 0.7857rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.main-image {
+  margin: auto;
+  position: relative;
+  width: 215px;
+  height: 185px;
+
+  &::before {
+    display: block;
+    position: absolute;
+    width: 215px;
+    height: 171px;
+    background-image: url(../../images/photos/Main_layer_2.png);
+    background-repeat: no-repeat;
+    content: '';
+  }
+}
+
+.maina-image__foto {
+  position: absolute;
+  width: 182px;
+  height: 185px;
+  left: 22px;
+}
+
+.group-garantee__item__svg {
+  box-sizing: border-box;
+  fill: $primary-orange-color;
+  width: 56px;
+  height: 56px;
+  padding: 8px 10px;
+  border: 2px solid red;
+  border-right: 2px solid rgb(65, 70, 60);
 }
