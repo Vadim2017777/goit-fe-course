@@ -1,3 +1,8 @@
+.We_guarantee {
+  margin-bottom: 50px;
+  background-image: url(../../images/photos/Shape_1.png);
+}
+
 .title-text {
   margin: 0 0 30px 0;
   font-size: 1.429rem;
@@ -38,6 +43,7 @@
   position: relative;
   width: 215px;
   height: 185px;
+  margin-bottom: 86px;
 
   &::before {
     display: block;
@@ -50,56 +56,69 @@
   }
 }
 
-.maina-image__foto {
+.main-image__foto {
   position: absolute;
   width: 182px;
   height: 185px;
   left: 22px;
 }
 
-.group-garantee__item-svg {
-  position: relative;
-
-  fill: $primary-orange-color;
-  width: 30px;
-  height: 30px;
-}
-
 .group-guarantee {
   @extend %list;
-}
 
-// .group-garantee__item {
-//   display: flex;
-//   justify-content: space-between;
-// }
+  &__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
-.group-garantee__item-svg__wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  width: 52px;
-  height: 52px;
-  border: 2px solid red;
-  border-right: none;
+    &:not(:last-child) {
+      margin-bottom: 25px;
+    }
+  }
 
-  &::before,
-  &::after {
+  &__item-svg {
+    position: relative;
+    fill: $primary-orange-color;
+    width: 30px;
+    height: 36px;
+  }
+
+  &__item-svg--wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    flex: 0 0 56px;
+    height: 56px;
+    border: 2px solid $primary-orange-color;
+    border-right: none;
+    margin-right: 12px;
+
+    &::before,
+    &::after {
+      display: inline-block;
+      right: 0;
+      position: absolute;
+      width: 2px;
+      height: 10px;
+      content: '';
+      background: $primary-orange-color;
+    }
+
+    &::before {
+      top: 0;
+    }
+
+    &::after {
+      bottom: 0;
+    }
+  }
+
+  &__item-text {
     display: inline-block;
-    right: 0;
-    position: absolute;
-    width: 2px;
-    height: 15px;
-    content: '';
-    background: $primary-orange-color;
-  }
-
-  &::before {
-    top: 0;
-  }
-
-  &::after {
-    bottom: 0;
+    margin: 0;
+    font-size: 0.9286rem;
+    font-weight: 700;
+    line-height: 20px;
   }
 }
