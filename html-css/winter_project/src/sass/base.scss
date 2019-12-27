@@ -3,6 +3,9 @@ html {
   font-family: 'Montserrat', sans-serif;
   font-size: 14px;
 }
+body {
+  counter-reset: V;
+}
 
 *,
 *::before,

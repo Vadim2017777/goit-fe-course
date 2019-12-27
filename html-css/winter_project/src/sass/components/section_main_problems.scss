@@ -1,0 +1,45 @@
+.main-problems {
+  background: url(../../images/photos/Black_rectangle.jpg.png);
+  padding-top: 50px;
+
+  &__title {
+    font-size: 1.429rem;
+    line-height: 30px;
+    font-weight: 800;
+    margin: 0;
+    margin-bottom: 20px;
+    color: white;
+    width: 230px;
+
+    &--yellow {
+      color: $primary-orange-color;
+    }
+
+    &--shift {
+      display: block;
+    }
+  }
+
+  &__list {
+    @extend %list;
+    background-color: #ffffff;
+  }
+
+  &__item {
+    display: block;
+    font-size: 0.9286rem;
+    line-height: 20px;
+    font-weight: 700;
+    counter-increment: V;
+
+    &::before {
+      display: block;
+      content: ' \2014\2014'' \00A0'counter(V, decimal-leading-zero);
+      margin-left: 15px;
+      line-height: 29px;
+      color: red;
+      // width: 25px;
+      // height: 2px;
+    }
+  }
+}
