@@ -39,6 +39,10 @@
     font-weight: 700;
     counter-increment: V;
 
+    &:not(:last-child) {
+      margin-bottom: 25px;
+    }
+
     &::before {
       display: block;
       content: ' \2003\2003'' \00A0'counter(V, decimal-leading-zero);
@@ -58,15 +62,4 @@
     width: 25px;
     height: 2px;
   }
-}
-
-.Прямоугольник_3 {
-  background-color: rgb(255, 255, 255);
-  box-shadow: 4px 6.928px 15.54px 5.46px rgba(29, 29, 27, 0.04);
-  position: absolute;
-  left: 20px;
-  top: 1149px;
-  width: 280px;
-  height: 465px;
-  z-index: 89;
 }
