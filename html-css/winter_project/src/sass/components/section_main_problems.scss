@@ -1,11 +1,10 @@
 .main-problems {
-  padding-bottom: 44px;
+  // padding-bottom: 44px;
   background: url(../../images/photos/Black_rectangle.jpg.png);
   background-repeat: no-repeat;
   // background-position: 50% -20%;
   padding-top: 100px;
   background-size: 768px 514px;
-  box-shadow: 4px 6.928px 15.54px 5.46px rgba(29, 29, 27, 0.04);
 
   &__title {
     font-size: 1.429rem;
@@ -30,6 +29,7 @@
     background-color: #ffffff;
     padding-top: 22px;
     padding-left: 26px;
+    box-shadow: 4px 6.928px 15.54px 5.46px rgba(29, 29, 27, 0.04);
   }
 
   &__item {
@@ -38,9 +38,10 @@
     line-height: 20px;
     font-weight: 700;
     counter-increment: V;
+    margin-bottom: 25px;
 
-    &:not(:last-child) {
-      margin-bottom: 25px;
+    &:last-child {
+      padding-bottom: 32px;
     }
 
     &::before {
