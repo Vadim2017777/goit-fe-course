@@ -1,19 +1,16 @@
-.main-problems {
+.selection {
   // padding-bottom: 44px;
   background: url(../../images/photos/Black_rectangle.jpg.png);
   background-repeat: no-repeat;
   // background-position: 50% -20%;
-  padding-top: 100px;
-  background-size: 768px 650px;
+  padding-bottom: 44px;
+  background-size: 768px 408px;
 
   &__title {
+    margin: 0 0 10px 0;
+    color: white;
     font-size: 1.429rem;
     line-height: 30px;
-    font-weight: 800;
-    margin: 0;
-    margin-bottom: 20px;
-    color: white;
-    width: 230px;
 
     &--yellow {
       color: $primary-orange-color;
@@ -25,6 +22,8 @@
   }
 
   &__list {
+    position: relative;
+
     @extend %list;
     background-color: #ffffff;
     padding-top: 22px;
@@ -37,7 +36,7 @@
     font-size: 0.9286rem;
     line-height: 20px;
     font-weight: 700;
-    counter-increment: V;
+    counter-increment: H;
     margin-bottom: 25px;
 
     &:last-child {
@@ -46,7 +45,7 @@
 
     &::before {
       display: block;
-      content: ' \2003\2003'' \00A0'counter(V, decimal-leading-zero);
+      content: ' \2003\2003'' \00A0'counter(H, decimal-leading-zero);
       font-size: 0.9286rem;
       line-height: 29px;
       color: $primary-orange-color;
