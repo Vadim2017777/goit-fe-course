@@ -1,0 +1,126 @@
+.preparing-for-english {
+  margin-bottom: 50px;
+  background-image: url(../../images/photos/Shape_1.png);
+  background-size: 100% 526px;
+  background-repeat: no-repeat;
+
+  &__title {
+    margin: 0 0 30px 0;
+    font-size: 1.429rem;
+    line-height: 29px;
+    font-weight: 800;
+  }
+
+  &__paragraph {
+    margin: 0 0 36px 0;
+    font-size: 1.071rem;
+    line-height: 20px;
+    font-weight: 700;
+
+    &--grey {
+      color: $primary-grey-color;
+    }
+
+    &--orange {
+      color: $primary-orange-color;
+    }
+  }
+
+  &__button {
+    @extend %button;
+    display: block;
+    margin: 0 auto 36px;
+    height: 44px;
+    padding: 0 12px;
+    background-color: $primary-orange-color;
+    font-size: 0.7857rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #ffffff;
+  }
+
+  &__image {
+    margin: auto;
+    position: relative;
+    width: 215px;
+    height: 185px;
+    margin-bottom: 86px;
+
+    &::before {
+      display: block;
+      position: absolute;
+      width: 215px;
+      height: 171px;
+      background-image: url(../../images/photos/Main_layer_2.png);
+      background-repeat: no-repeat;
+      content: '';
+    }
+  }
+
+  &__foto {
+    position: absolute;
+    width: 182px;
+    height: 185px;
+    left: 22px;
+  }
+
+  &-group {
+    @extend %list;
+
+    &__item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      &:not(:last-child) {
+        margin-bottom: 25px;
+      }
+    }
+
+    &__item-svg {
+      position: relative;
+      fill: $primary-orange-color;
+      width: 30px;
+      height: 36px;
+    }
+
+    &__item-svg--wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      flex: 0 0 56px;
+      height: 56px;
+      border: 2px solid $primary-orange-color;
+      border-right: none;
+      margin-right: 12px;
+
+      &::before,
+      &::after {
+        display: inline-block;
+        right: 0;
+        position: absolute;
+        width: 2px;
+        height: 10px;
+        content: '';
+        background: $primary-orange-color;
+      }
+
+      &::before {
+        top: 0;
+      }
+
+      &::after {
+        bottom: 0;
+      }
+    }
+
+    &__item-text {
+      display: inline-block;
+      margin: 0;
+      font-size: 0.9286rem;
+      font-weight: 700;
+      line-height: 20px;
+    }
+  }
+}

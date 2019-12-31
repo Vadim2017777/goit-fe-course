@@ -1,0 +1,134 @@
+.reviews {
+  padding-top: 46px;
+  padding-bottom: 54px;
+
+  &__title {
+    margin: 0 0 20px 0;
+    font-size: 1.429rem;
+    line-height: 26px;
+    font-weight: 800;
+  }
+
+  &__wrapper {
+    text-align: center;
+  }
+
+  &__card {
+    padding: 24px 18px 32px;
+    box-shadow: 4px 6.928px 15.54px 5.46px rgba(29, 29, 27, 0.04);
+    margin-bottom: 16px;
+  }
+
+  &__card-foto {
+    margin: 0 auto 24px;
+  }
+
+  &__card-svg {
+    display: block;
+    margin: 0 auto;
+    width: 28px;
+    height: 18px;
+    fill: #436eab;
+    margin-bottom: 16px;
+  }
+
+  &__card-name {
+    display: block;
+    font-size: 0.9286rem;
+    line-height: 29px;
+    font-weight: 800;
+    color: $primary-orange-color;
+  }
+
+  &__card-desc {
+    margin: 0 0 18px 0;
+    font-size: 0.9286rem;
+    line-height: 16px;
+    color: $secondary-grey-color;
+  }
+
+  &__card-text {
+    font-size: 0.9286rem;
+    line-height: 20px;
+    font-weight: 400;
+  }
+
+  &__card-link {
+    font-size: 0.9286rem;
+    line-height: 20px;
+    color: $primary-orange-color;
+  }
+
+  &__images {
+    position: relative;
+  }
+
+  &__image {
+    display: inline-block;
+
+    &:not(:last-of-type) {
+      margin-right: 12px;
+    }
+  }
+
+  &__arrow-left {
+    display: inline-block;
+    position: absolute;
+    width: 20px;
+    height: 1px;
+    left: 0;
+    top: 50%;
+    background: $primary-orange-color;
+
+    &::before,
+    &:after {
+      display: block;
+      position: absolute;
+      content: '';
+      height: 1px;
+      background: $primary-orange-color;
+      width: 8px;
+    }
+
+    &::before {
+      transform: rotate(-35deg);
+      transform-origin: left;
+    }
+
+    &:after {
+      transform: rotate(35deg);
+      transform-origin: left;
+    }
+  }
+
+  &__arrow-right {
+    display: inline-block;
+    position: absolute;
+    width: 20px;
+    height: 1px;
+    right: 0;
+    top: 50%;
+    background: $primary-orange-color;
+
+    &::before,
+    &:after {
+      display: block;
+      position: absolute;
+      content: '';
+      height: 1px;
+      background: $primary-orange-color;
+      width: 8px;
+      right: 0;
+    }
+
+    &::before {
+      transform: rotate(-35deg);
+      transform-origin: right;
+    }
+
+    &:after {
+      transform: rotate(35deg);
+      transform-origin: right;
+    }
+  }
+}
