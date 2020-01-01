@@ -1,0 +1,35 @@
+.call-us {
+  padding: 34px 0 16px;
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__phone {
+    display: block;
+    margin-bottom: 24px;
+    font-size: 1.286rem;
+    line-height: 37px;
+    font-weight: 600;
+    color: #000000;
+    text-decoration: none;
+
+    &::before {
+      display: inline-block;
+
+      content: '';
+      background-image: url(../../images/icons/icon_tel.png);
+      width: 24px;
+      height: 24px;
+      margin-right: 9px;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+  }
+
+  &__image {
+    display: block;
+    margin-bottom: 20px;
+  }
+}
