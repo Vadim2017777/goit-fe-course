@@ -1,10 +1,9 @@
 .selection {
-  // padding-bottom: 44px;
   background: url(../../images/photos/Black_rectangle.jpg.png);
   background-repeat: no-repeat;
-  // background-position: 50% -20%;
   padding-bottom: 44px;
   background-size: 768px 408px;
+  background-position-x: center;
 
   &__title {
     margin: 0 0 10px 0;

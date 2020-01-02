@@ -5,7 +5,7 @@
 @import 'normalize.scss';
 @import 'base.scss';
 @import 'helpers/variables.scss';
-@import 'media.scss';
+// @import 'media.scss';
 @import 'helpers/placeholders.scss';
 @import 'components/site-header.scss';
 @import 'components/section_preparing_for_english.scss';
@@ -19,3 +19,4 @@
 @import 'components/section_signin_form.scss';
 @import 'components/section_call_us.scss';
 @import 'components/footer.scss';
+@import 'media.scss';

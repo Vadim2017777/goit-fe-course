@@ -1,13 +1,28 @@
 <header class="site-header container">
   <nav class="site-navigation">
-    <a href="#" class="site-logo"
-      ><img
-        src="../images/icons/LOGO_HellEnglish.png"
-        alt="logo Hell_English"
-        height="31"
-    /></a>
-    <button class="humburger-button">
-      <span class="humburger-button_line"></span>
-    </button>
+    <a href="#" class="site-logo">
+      <picture>
+        <source
+          media="(max-width: 767px)"
+          srcset="../images/icons/LOGO_HellEnglish.png"
+        />
+        <source
+          media="(min-width: 768px)"
+          srcset="../images/icons/LOGO_HellEnglish_768.png"
+        />
+
+        <img
+          src="../images/icons/LOGO_HellEnglish.png"
+          alt="logo Hell_English"
+          width="auto"
+        />
+      </picture>
+    </a>
+    <div class="site-navigation__wrapper">
+      <button class="site-navigation__button">консультация по телефону</button>
+      <button class="humburger-button">
+        <span class="humburger-button_line"></span>
+      </button>
+    </div>
   </nav>
 </header>

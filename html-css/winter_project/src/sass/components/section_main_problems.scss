@@ -1,10 +1,9 @@
 .main-problems {
-  // padding-bottom: 44px;
   background: url(../../images/photos/Black_rectangle.jpg.png);
   background-repeat: no-repeat;
-  // background-position: 50% -20%;
-  padding-top: 100px;
+  padding-top: 54px;
   background-size: 768px 650px;
+  background-position-x: center;
 
   &__title {
     font-size: 1.429rem;
@@ -29,6 +28,7 @@
     background-color: #ffffff;
     padding-top: 22px;
     padding-left: 26px;
+    padding-bottom: 32px;
     box-shadow: 4px 6.928px 15.54px 5.46px rgba(29, 29, 27, 0.04);
   }
 
@@ -41,7 +41,7 @@
     margin-bottom: 25px;
 
     &:last-child {
-      padding-bottom: 32px;
+      margin-bottom: 0;
     }
 
     &::before {
@@ -49,6 +49,7 @@
       content: ' \2003\2003'' \00A0'counter(V, decimal-leading-zero);
       font-size: 0.9286rem;
       line-height: 29px;
+      font-weight: 500;
       color: $primary-orange-color;
     }
   }
@@ -62,5 +63,45 @@
     top: 13px;
     width: 25px;
     height: 2px;
+  }
+}
+
+@media (min-width: 768px) {
+  .main-problems {
+    background-image: url(../../images/photos/BG-fire_768.png);
+    background-size: 100% 334px;
+    background-repeat: no-repeat;
+
+    &__title {
+      font-size: 1.857rem;
+      line-height: 33px;
+      width: 423px;
+
+      &--shift {
+        display: inline;
+      }
+    }
+
+    &__list {
+      padding: 40px 0 40px 108px;
+      display: flex;
+      flex-wrap: wrap;
+      width: 680px;
+    }
+
+    &__item {
+      width: 259px;
+      min-height: 70px;
+      flex-shrink: 0;
+      margin: 0;
+
+      &:not(:nth-last-child(-n + 2)) {
+        margin-bottom: 25px;
+      }
+
+      &--shift {
+        display: block;
+      }
+    }
   }
 }
