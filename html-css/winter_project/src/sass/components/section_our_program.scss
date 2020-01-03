@@ -16,11 +16,12 @@
     margin-left: 30px;
     margin-bottom: 40px;
     text-align: left;
-    margin: 0 auto;
+    margin: 0 0 34px 0;
     padding-left: 52px;
 
     &:last-child {
       padding-bottom: 32px;
+      margin-bottom: 0;
     }
 
     &::before {
@@ -31,7 +32,7 @@
       top: 10px;
       background-color: $secondary-grey-color;
       width: 2px;
-      height: calc(100% + 24px);
+      height: calc(100% + 34px);
     }
 
     &::after {
@@ -103,7 +104,7 @@
 .our-program__img {
   position: absolute;
   bottom: -98px;
-  left: 157px;
+  left: 159px;
   // width: 230px;
   width: 143px;
   height: 183px;
@@ -113,19 +114,46 @@
 @media (min-width: 768px) {
   .our-program {
     &__wrapper {
-      padding-top: 67px;
-      text-align: left;
+      padding-bottom: 130px;
     }
 
     &__title {
-      font-size: 1.857rem;
+      padding-right: 64px;
+      font-size: 26px;
       line-height: 1.2;
-      margin: 0 0 54px;
+      text-align: left;
+      margin-bottom: 54px;
+    }
+
+    &__list {
+      padding-left: 100px;
     }
 
     &__item {
+      margin-left: 0;
+      padding-left: 60px;
       display: flex;
-      flex-shrink: 0;
+      flex-wrap: wrap;
+      width: 100%;
+    }
+
+    &__headline {
+      width: 100%;
+    }
+
+    &__desc-wrapper {
+      width: 158px;
+    }
+
+    &__img {
+      position: absolute;
+      left: 323px;
+      bottom: -14px;
+      // width: 230px;
+      width: auto;
+      height: 400px;
+      width: 409px;
+      z-index: 0;
     }
   }
 }

@@ -88,3 +88,11 @@
     color: $primary-orange-color;
   }
 }
+
+@media (min-width: 768px) {
+  .our-teacher {
+    &__wrapper-data {
+      display: inline-block;
+    }
+  }
+}

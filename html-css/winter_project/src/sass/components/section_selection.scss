@@ -2,11 +2,12 @@
   background: url(../../images/photos/Black_rectangle.jpg.png);
   background-repeat: no-repeat;
   padding-bottom: 44px;
-  background-size: 768px 408px;
+  background-size: 100% 408px;
   background-position-x: center;
 
   &__title {
     margin: 0 0 10px 0;
+    width: 138px;
     color: white;
     font-size: 1.429rem;
     line-height: 30px;
@@ -60,5 +61,42 @@
     top: 13px;
     width: 25px;
     height: 2px;
+  }
+}
+
+@media (min-width: 768px) {
+  .selection {
+    padding-bottom: 44px;
+    background-size: 100% 236px;
+
+    &__title {
+      font-size: 1.857rem;
+      width: 100%;
+      line-height: 62px;
+      text-align: center;
+    }
+
+    &__list {
+      padding: 40px 0 30px 108px;
+      display: flex;
+      flex-wrap: wrap;
+      width: 680px;
+    }
+
+    &__item {
+      width: 259px;
+      min-height: 70px;
+      flex-shrink: 0;
+      margin: 0;
+
+      &:not(:nth-last-child(-n + 2)) {
+        margin-bottom: 25px;
+      }
+    }
+
+    &__text {
+      display: block;
+      max-width: 204px;
+    }
   }
 }

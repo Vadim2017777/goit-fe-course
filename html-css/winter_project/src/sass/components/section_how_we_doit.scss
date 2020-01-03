@@ -78,8 +78,10 @@
 }
 
 @media (max-width: 768px) {
-  &:not(:last-child) {
-    margin-bottom: 16px;
+  .howwe-doit {
+    &:not(:last-child) {
+      margin-bottom: 16px;
+    }
   }
 }
 
