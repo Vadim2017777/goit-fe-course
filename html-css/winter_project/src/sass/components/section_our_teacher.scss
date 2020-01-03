@@ -10,6 +10,7 @@
   }
 
   &__img {
+    display: block;
     padding-bottom: 20px;
   }
 
@@ -91,8 +92,15 @@
 
 @media (min-width: 768px) {
   .our-teacher {
+    display: flex;
+    &__img {
+      display: block;
+      padding-bottom: 0;
+    }
+
     &__wrapper-data {
       display: inline-block;
+      width: 400px;
     }
   }
 }

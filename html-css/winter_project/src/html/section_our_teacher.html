@@ -1,13 +1,22 @@
 <section class="our-teacher">
   <div class="our-teacher__wrapper container">
     <h3 class="our-teacher__title">Преподаватель</h3>
-    <img
-      class="our-teacher__img"
-      src="../images/photos/elena_morozova.png"
-      alt="teacher_elena_morozova"
-      width="294"
-      height="214"
-    />
+    <picture class="our-teacher__img">
+      <source
+        media="(max-width: 767px)"
+        srcset="../images/photos/elena_morozova.png"
+      />
+      <source
+        media="(min-width: 768px)"
+        srcset="../images/photos/elena_morozova768.png"
+      />
+
+      <img
+        src="../images/photos/elena_morozova.png"
+        alt="teacher_elena_morozova"
+        width="auto"
+      />
+    </picture>
 
     <div class="our-teacher__wrapper-data">
       <span class="our-teacher__name">Елена Морева </span>
