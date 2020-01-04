@@ -1,6 +1,6 @@
 .sign-in {
   background-image: url(../../images/photos/background_mobile_form.png);
-  background-position: center;
+  background-size: cover;
   background-repeat: no-repeat;
   padding: 52px 0 58px;
 
@@ -68,5 +68,48 @@
 
   &--orange {
     color: $primary-orange-color;
+  }
+
+  &--orange > br {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .sign-in {
+    padding: 60px 0;
+    background-image: url(../../images/photos/background_mobile_768.png);
+
+    &__title {
+      display: inline-block;
+      margin: 0 auto 30px;
+      font-size: 1.571rem;
+      line-height: 38px;
+      width: 574px;
+    }
+
+    &__text {
+      display: inline-block;
+      padding-bottom: 42px;
+      width: 458px;
+      margin: 0 auto;
+      font-size: 1.071rem;
+      line-height: 20px;
+    }
+
+    &--orange + br {
+      display: none;
+    }
+
+    &--orange > br {
+      display: inline;
+    }
+
+    &__form {
+      & input {
+        width: 402px;
+        height: 48px;
+      }
+    }
   }
 }

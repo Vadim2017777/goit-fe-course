@@ -10,3 +10,9 @@
     color: #fdfefe6b;
   }
 }
+
+@media (min-width: 768px) {
+  .site-footer {
+    text-align: left;
+  }
+}

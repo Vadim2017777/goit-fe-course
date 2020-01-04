@@ -71,6 +71,10 @@
     }
   }
 
+  &__image--hidden {
+    display: none;
+  }
+
   &__arrow-left {
     display: inline-block;
     position: absolute;
@@ -129,6 +133,89 @@
     &:after {
       transform: rotate(35deg);
       transform-origin: right;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .reviews {
+    padding-bottom: 74px;
+
+    &__title {
+      font-size: 1.857rem;
+      line-height: 1.2;
+      margin-bottom: 40px;
+    }
+
+    &__hidword {
+      display: none;
+    }
+
+    &__card {
+      padding: 0;
+      display: flex;
+      flex-wrap: wrap;
+      height: 300px;
+      width: 690px;
+    }
+
+    &__wrapper-img {
+      padding-top: 62px;
+      width: 162px;
+    }
+
+    &__wrapper-text {
+      padding-top: 46px;
+      width: 528px;
+      text-align: left;
+    }
+
+    &__card-name {
+      font-size: 1.286rem;
+      padding-bottom: 22px;
+      line-height: 30px;
+    }
+
+    &__card-desc {
+      padding-bottom: 22px;
+    }
+
+    &__image {
+      display: inline-block;
+
+      &:not(:last-of-type) {
+        margin-right: 12px;
+      }
+    }
+
+    &__image--hidden {
+      display: inline-block;
+    }
+
+    &__arrow-left {
+      width: 25px;
+      height: 2px;
+      left: -18px;
+      top: -262%;
+
+      &::before,
+      &:after {
+        height: 2px;
+        width: 10px;
+      }
+    }
+
+    &__arrow-right {
+      width: 25px;
+      height: 2px;
+      right: -18px;
+      top: -262%;
+
+      &::before,
+      &:after {
+        height: 2px;
+        width: 10px;
+      }
     }
   }
 }

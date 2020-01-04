@@ -92,15 +92,33 @@
 
 @media (min-width: 768px) {
   .our-teacher {
-    display: flex;
+    &__wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    &__title {
+      width: 100%;
+      padding-bottom: 24px;
+      font-size: 1.857rem;
+      line-height: 1.2;
+    }
+
     &__img {
-      display: block;
       padding-bottom: 0;
     }
 
     &__wrapper-data {
-      display: inline-block;
       width: 400px;
+    }
+
+    &__name {
+      line-height: 1;
+
+      &::after {
+        margin-top: 16px;
+      }
     }
   }
 }

@@ -60,3 +60,17 @@
     color: $primary-orange-color;
   }
 }
+
+@media (min-width: 768px) {
+  .we-guarantee {
+    background-size: 100% 750px;
+    background-position: 100% -18%;
+
+    &__title {
+      margin: 0 0 70px 0;
+      font-size: 1.857rem;
+      line-height: 1.2;
+      font-weight: 800;
+    }
+  }
+}
