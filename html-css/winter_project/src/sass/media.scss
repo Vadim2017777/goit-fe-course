@@ -9,3 +9,15 @@
     width: 690px;
   }
 }
+
+@media (min-width: 1280px) {
+  .container {
+    width: 1210px;
+  }
+}
+
+@media (min-width: 1680px) {
+  .container {
+    width: 1346px;
+  }
+}

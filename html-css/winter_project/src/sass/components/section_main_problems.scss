@@ -17,14 +17,11 @@
     &--yellow {
       color: $primary-orange-color;
     }
-
-    &--shift {
-      display: block;
-    }
   }
 
   &__list {
     @extend %list;
+
     background-color: #ffffff;
     padding-top: 22px;
     padding-left: 26px;
@@ -76,10 +73,6 @@
       font-size: 1.857rem;
       line-height: 33px;
       width: 423px;
-
-      &--shift {
-        display: inline;
-      }
     }
 
     &__list {
@@ -94,14 +87,64 @@
       min-height: 70px;
       flex-shrink: 0;
       margin: 0;
+    }
 
+    &__text > br {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 1279px) {
+  .main-problems {
+    &__item {
       &:not(:nth-last-child(-n + 2)) {
         margin-bottom: 25px;
       }
+    }
+  }
+}
 
-      &--shift {
-        display: block;
+@media (min-width: 1280px) {
+  .main-problems {
+    background-image: url(../../images/photos/BG-fire_1280.png);
+    background-size: 100% 86%;
+    background-repeat: no-repeat;
+
+    &__title {
+      font-size: 3rem;
+      line-height: 56px;
+      width: 740px;
+      margin-bottom: 48px;
+    }
+
+    &__list {
+      padding: 54px 104px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      width: 1206px;
+    }
+
+    &__item {
+      // width: 332px;
+      font-size: 1.286rem;
+      line-height: 29px;
+
+      &:not(:nth-last-child(-n + 3)) {
+        margin-bottom: 40px;
       }
+
+      &::before {
+        content: ' \2003\2003'counter(V, decimal-leading-zero);
+        font-size: 1.429rem;
+        line-height: 29px;
+      }
+    }
+
+    &__text {
+      display: block;
+      width: 270px;
     }
   }
 }

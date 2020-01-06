@@ -1,6 +1,6 @@
 .reviews {
   padding-top: 46px;
-  padding-bottom: 54px;
+  margin-bottom: 54px;
 
   &__title {
     margin: 0 0 20px 0;
@@ -21,6 +21,8 @@
 
   &__card-foto {
     margin: 0 auto 24px;
+    width: 80px;
+    height: 80px;
   }
 
   &__card-svg {
@@ -83,6 +85,7 @@
     left: 0;
     top: 50%;
     background: $primary-orange-color;
+    cursor: pointer;
 
     &::before,
     &:after {
@@ -113,6 +116,7 @@
     right: 0;
     top: 50%;
     background: $primary-orange-color;
+    cursor: pointer;
 
     &::before,
     &:after {
@@ -139,7 +143,7 @@
 
 @media (min-width: 768px) {
   .reviews {
-    padding-bottom: 74px;
+    margin-bottom: 74px;
 
     &__title {
       font-size: 1.857rem;
@@ -216,6 +220,96 @@
         height: 2px;
         width: 10px;
       }
+    }
+  }
+}
+
+@media (min-width: 1280px) {
+  .reviews {
+    margin-bottom: 100px;
+
+    &__title {
+      font-size: 3rem;
+      line-height: 1.2;
+      margin-bottom: 48px;
+    }
+
+    &__cards {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    &__card {
+      padding: 0;
+      margin-bottom: 40px;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      height: 346px;
+      width: 1068px;
+    }
+
+    &__wrapper-img {
+      padding-top: 62px;
+      width: 140px;
+      margin-right: 40px;
+    }
+
+    &__card-foto {
+      margin: 0 auto 24px;
+      width: 145px;
+      height: 145px;
+    }
+
+    &__wrapper-text {
+      padding-top: 56px;
+      width: 702px;
+      text-align: left;
+    }
+
+    &__card-name {
+      font-size: 1.786rem;
+      line-height: 30px;
+      padding-bottom: 18px;
+    }
+
+    &__card-desc {
+      font-size: 0.8571rem;
+      line-height: 16px;
+      padding-bottom: 22px;
+    }
+
+    &__card-text {
+      font-size: 1.143rem;
+      line-height: 29px;
+    }
+
+    &__card-link {
+      font-size: 1.143rem;
+      line-height: 29px;
+    }
+
+    &__image {
+      display: inline-block;
+
+      &:not(:last-of-type) {
+        margin-right: 36px;
+      }
+    }
+
+    &__image--hidden {
+      display: inline-block;
+    }
+
+    &__arrow-left {
+      left: -292px;
+      top: -320%;
+    }
+
+    &__arrow-right {
+      right: -280px;
+      top: -320%;
     }
   }
 }

@@ -16,6 +16,10 @@
   &__button {
     display: none;
   }
+
+  &__menu {
+    display: none;
+  }
 }
 
 .humburger-button {
@@ -86,5 +90,50 @@
       border: 2px solid $primary-orange-color;
       cursor: pointer;
     }
+  }
+}
+
+@media (min-width: 1280px) {
+  .site-header {
+    padding-top: 45px;
+  }
+
+  .site-navigation {
+    &__menu {
+      display: flex;
+      padding: 0;
+      margin: 0;
+      list-style: none;
+    }
+
+    &__item {
+      padding-right: 48px;
+    }
+
+    &__link {
+      font-size: 0.8571rem;
+      line-height: 1.2;
+      font-weight: 700;
+      color: $primary-grey-color;
+      text-transform: uppercase;
+      text-decoration: none;
+
+      &:hover {
+        color: $primary-orange-color;
+      }
+    }
+
+    &__button {
+      display: block;
+      margin-right: 0;
+      height: 66px;
+      padding: 0 40px;
+      font-size: 0.8571rem;
+      font-weight: 700;
+    }
+  }
+
+  .humburger-button {
+    display: none;
   }
 }

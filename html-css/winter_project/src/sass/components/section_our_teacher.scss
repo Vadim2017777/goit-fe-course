@@ -2,8 +2,8 @@
   margin-bottom: 50px;
 
   &__title {
-    margin: 0;
-    padding-bottom: 20px;
+    margin: 0 0 24px 0;
+    margin-bottom: 20px;
     font-size: 1.429rem;
     line-height: 30px;
     font-weight: 800;
@@ -71,13 +71,13 @@
   }
 
   &__text {
-    margin: 0rem;
+    margin: 0;
     font-size: 0.7857rem;
     line-height: 20px;
     font-weight: 400;
     color: $secondary-grey-color;
     padding-left: 14px;
-    padding-bottom: 16px;
+    margin-bottom: 16px;
   }
 
   &__link {
@@ -100,7 +100,7 @@
 
     &__title {
       width: 100%;
-      padding-bottom: 24px;
+      margin-bottom: 24px;
       font-size: 1.857rem;
       line-height: 1.2;
     }
@@ -119,6 +119,81 @@
       &::after {
         margin-top: 16px;
       }
+    }
+  }
+}
+
+@media (min-width: 1280px) {
+  .our-teacher {
+    margin-bottom: 90px;
+
+    &__wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    &__title {
+      width: 100%;
+      margin-bottom: 48px;
+      font-size: 3rem;
+      line-height: 62px;
+    }
+
+    &__wrapper-data {
+      width: 633px;
+    }
+
+    &__name {
+      font-size: 2.071rem;
+      line-height: 29px;
+
+      &::after {
+        width: 90%;
+      }
+    }
+
+    &__list {
+      margin-bottom: 32px;
+
+      &::after {
+        left: 0;
+      }
+    }
+
+    &__item {
+      display: block;
+      font-size: 1.143rem;
+      font-weight: 600;
+      padding-bottom: 30px;
+      width: 445px;
+      padding-left: 34px;
+
+      &::before {
+        width: 20px;
+        height: 16px;
+        background-size: cover;
+        padding-right: 20px;
+      }
+    }
+
+    &__item > br {
+      display: none;
+    }
+
+    &__text {
+      font-size: 1.143rem;
+      line-height: 29px;
+      font-weight: 400;
+      color: $secondary-grey-color;
+      padding-left: 0;
+      margin-bottom: 30px;
+    }
+
+    &__link {
+      padding: 0;
+      font-size: 1.143rem;
+      line-height: 29px;
     }
   }
 }

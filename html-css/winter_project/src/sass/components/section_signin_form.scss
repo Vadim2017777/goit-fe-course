@@ -52,10 +52,10 @@
 
     & button {
       border: 2px solid $primary-orange-color;
-      padding: 15px 0;
+      padding: 15px 12px;
       outline: none;
       text-transform: uppercase;
-      width: 246px;
+
       height: 44px;
       font-size: 0.7857rem;
       font-weight: 700;
@@ -109,6 +109,50 @@
       & input {
         width: 402px;
         height: 48px;
+      }
+    }
+  }
+}
+
+@media (min-width: 1280px) {
+  .sign-in {
+    padding: 86px 0;
+    background-image: url(../../images/photos/background_mobile_1280.png);
+
+    &__wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+    }
+
+    &__title {
+      margin: 0 auto 30px;
+      font-size: 2.643rem;
+      line-height: 50px;
+      width: 936px;
+    }
+
+    &__text {
+      padding-bottom: 50px;
+      width: 548px;
+      font-size: 1.286rem;
+      line-height: 24px;
+    }
+
+    &__form {
+      & input {
+        width: 602px;
+        height: 72px;
+        font-size: 1.429rem;
+        line-height: 37px;
+        text-indent: 30px;
+      }
+
+      & button {
+        font-size: 0.8571rem;
+        height: 68px;
+        padding: 0 18px;
+        letter-spacing: 2px;
       }
     }
   }
