@@ -135,7 +135,7 @@
 
     &__title {
       width: 100%;
-      margin-bottom: 48px;
+      margin-bottom: 58px;
       font-size: 3rem;
       line-height: 4.429rem;
     }
@@ -194,6 +194,48 @@
       padding: 0;
       font-size: 1.143rem;
       line-height: 2.071rem;
+    }
+  }
+}
+
+@media (min-width: 1680px) {
+  .our-teacher {
+    &__wrapper-data {
+      width: 750px;
+    }
+
+    &__name {
+      font-size: 1.706rem;
+      line-height: 1.706rem;
+    }
+
+    &__item {
+      display: block;
+      font-size: 1.143rem;
+      font-weight: 600;
+      width: 500px;
+
+      &::before {
+        width: 20px;
+        height: 16px;
+        background-size: cover;
+        padding-right: 20px;
+      }
+    }
+
+    &__text {
+      font-size: 0.9412rem;
+      line-height: 1.706rem;
+      font-weight: 400;
+      color: $secondary-grey-color;
+      padding-left: 0;
+      margin-bottom: 20px;
+    }
+
+    &__link {
+      padding: 0;
+      font-size: 0.9412rem;
+      line-height: 1.706rem;
     }
   }
 }

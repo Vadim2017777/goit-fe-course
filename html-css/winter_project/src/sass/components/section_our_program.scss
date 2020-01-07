@@ -177,10 +177,10 @@
     }
 
     &__title {
-      padding-right: 64px;
+      padding-right: 0;
       font-size: 3rem;
       line-height: 1.2;
-      margin-bottom: 80px;
+      margin-bottom: 5.714rem;
     }
 
     &__list {
@@ -259,7 +259,15 @@
 
 @media (min-width: 1680px) {
   .our-program {
+    &::before {
+      top: 149px;
+    }
+
     &__item {
+      &:last-child {
+        width: 166px;
+      }
+
       &::after {
         top: -62px;
       }
