@@ -35,6 +35,14 @@
   }
 }
 
+@media (max-width: 767px) {
+  .call-us {
+    &__phone {
+      margin-bottom: 20px;
+    }
+  }
+}
+
 @media (min-width: 768px) {
   .call-us {
     padding: 34px 0;
