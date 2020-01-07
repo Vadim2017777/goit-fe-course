@@ -157,3 +157,15 @@
     }
   }
 }
+
+@media (min-width: 1680px) {
+  .sign-in {
+    &__title {
+      width: 1054px;
+    }
+
+    &__text {
+      width: 580px;
+    }
+  }
+}
