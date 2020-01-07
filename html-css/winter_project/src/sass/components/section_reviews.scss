@@ -5,7 +5,7 @@
   &__title {
     margin: 0 0 20px 0;
     font-size: 1.429rem;
-    line-height: 26px;
+    line-height: 1.857rem;
     font-weight: 800;
   }
 
@@ -37,7 +37,7 @@
   &__card-name {
     display: block;
     font-size: 0.9286rem;
-    line-height: 29px;
+    line-height: 1.857rem;
     font-weight: 800;
     color: $primary-orange-color;
   }
@@ -45,19 +45,19 @@
   &__card-desc {
     margin: 0 0 18px 0;
     font-size: 0.9286rem;
-    line-height: 16px;
+    line-height: 1.143rem;
     color: $secondary-grey-color;
   }
 
   &__card-text {
     font-size: 0.9286rem;
-    line-height: 20px;
+    line-height: 1.429rem;
     font-weight: 400;
   }
 
   &__card-link {
     font-size: 0.9286rem;
-    line-height: 20px;
+    line-height: 1.429rem;
     color: $primary-orange-color;
   }
 
@@ -177,7 +177,7 @@
     &__card-name {
       font-size: 1.286rem;
       padding-bottom: 22px;
-      line-height: 30px;
+      line-height: 2.143rem;
     }
 
     &__card-desc {
@@ -270,24 +270,24 @@
 
     &__card-name {
       font-size: 1.786rem;
-      line-height: 30px;
+      line-height: 2.143rem;
       padding-bottom: 18px;
     }
 
     &__card-desc {
       font-size: 0.8571rem;
-      line-height: 16px;
+      line-height: 1.143rem;
       padding-bottom: 22px;
     }
 
     &__card-text {
       font-size: 1.143rem;
-      line-height: 29px;
+      line-height: 2.071rem;
     }
 
     &__card-link {
       font-size: 1.143rem;
-      line-height: 29px;
+      line-height: 2.071rem;
     }
 
     &__image {

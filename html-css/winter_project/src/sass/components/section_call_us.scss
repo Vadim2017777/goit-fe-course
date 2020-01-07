@@ -11,7 +11,7 @@
     display: block;
 
     font-size: 1.286rem;
-    line-height: 37px;
+    line-height: 2.643rem;
     font-weight: 600;
     color: #000000;
     text-decoration: none;
@@ -20,7 +20,7 @@
       display: inline-block;
 
       content: '';
-      background-image: url(../../images/icons/icon_tel.png);
+      background-image: url(../images/icons/icon_tel.png);
       width: 24px;
       height: 24px;
       margin-right: 9px;
@@ -84,7 +84,7 @@
 
       &::before {
         position: absolute;
-        background-image: url(../../images/icons/icon_tel.png);
+        background-image: url(../images/icons/icon_tel.png);
         width: 32px;
         height: 32px;
         margin-right: 9px;

@@ -5,7 +5,7 @@
     margin: 0 0 24px 0;
     margin-bottom: 20px;
     font-size: 1.429rem;
-    line-height: 30px;
+    line-height: 2.143rem;
     font-weight: 800;
   }
 
@@ -17,7 +17,7 @@
   &__name {
     display: block;
     font-size: 1.143rem;
-    line-height: 29px;
+    line-height: 2.071rem;
     font-weight: 800;
     padding-bottom: 18px;
 
@@ -66,14 +66,14 @@
       width: 16px;
       height: 12px;
       padding-right: 15px;
-      background-image: url(../../images/icons/icon_check.png);
+      background-image: url(../images/icons/icon_check.png);
     }
   }
 
   &__text {
     margin: 0;
     font-size: 0.7857rem;
-    line-height: 20px;
+    line-height: 1.429rem;
     font-weight: 400;
     color: $secondary-grey-color;
     padding-left: 14px;
@@ -84,7 +84,7 @@
     margin: 0rem;
     padding-left: 14px;
     font-size: 0.7857rem;
-    line-height: 20px;
+    line-height: 1.429rem;
     font-weight: 400;
     color: $primary-orange-color;
   }
@@ -137,7 +137,7 @@
       width: 100%;
       margin-bottom: 48px;
       font-size: 3rem;
-      line-height: 62px;
+      line-height: 4.429rem;
     }
 
     &__wrapper-data {
@@ -146,7 +146,7 @@
 
     &__name {
       font-size: 2.071rem;
-      line-height: 29px;
+      line-height: 2.071rem;
 
       &::after {
         width: 90%;
@@ -183,7 +183,7 @@
 
     &__text {
       font-size: 1.143rem;
-      line-height: 29px;
+      line-height: 2.071rem;
       font-weight: 400;
       color: $secondary-grey-color;
       padding-left: 0;
@@ -193,7 +193,7 @@
     &__link {
       padding: 0;
       font-size: 1.143rem;
-      line-height: 29px;
+      line-height: 2.071rem;
     }
   }
 }

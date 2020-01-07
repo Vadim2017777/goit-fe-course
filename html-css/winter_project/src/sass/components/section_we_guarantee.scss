@@ -1,5 +1,5 @@
 .we-guarantee {
-  background-image: url(../../images/photos/bg_we_guarantee.jpg);
+  background-image: url(../images/photos/bg_we_guarantee.jpg);
   background-repeat: repeat-x;
   background-position: 100% -25%;
   background-size: 768px 650px;
@@ -21,7 +21,7 @@
     display: block;
     position: relative;
     font-size: 0.7857rem;
-    line-height: 20px;
+    line-height: 1.429rem;
     font-weight: 500;
     text-align: left;
     padding-left: 36px;
@@ -50,7 +50,7 @@
       content: '';
       height: 18px;
       width: 13px;
-      background-image: url(../../images/icons/fire.png);
+      background-image: url(../images/icons/fire.png);
       background-position: center;
       background-repeat: no-repeat;
     }
@@ -96,7 +96,7 @@
 
     &__item {
       font-size: 1.286rem;
-      line-height: 29px;
+      line-height: 2.071rem;
       font-weight: 500;
       text-align: left;
       padding-left: 50px;
@@ -109,7 +109,7 @@
         content: '';
         height: 27px;
         width: 20px;
-        background-image: url(../../images/icons/fire.png);
+        background-image: url(../images/icons/fire.png);
         background-size: contain;
       }
     }

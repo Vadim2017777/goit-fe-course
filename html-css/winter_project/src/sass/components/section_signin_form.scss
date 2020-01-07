@@ -1,5 +1,5 @@
 .sign-in {
-  background-image: url(../../images/photos/background_mobile_form.png);
+  background-image: url(../images/photos/background_mobile_form.png);
   background-size: cover;
   background-repeat: no-repeat;
   padding: 52px 0 58px;
@@ -10,7 +10,7 @@
 
   &__title {
     margin: 0 0 20px 0;
-    line-height: 26px;
+    line-height: 1.857rem;
     font-weight: 800;
     color: $primary-white-color;
   }
@@ -19,7 +19,7 @@
     display: block;
     margin: 0 0 26px 0;
     font-size: 0.7857rem;
-    line-height: 20px;
+    line-height: 1.857rem;
     font-weight: 600;
     color: $primary-white-color;
   }
@@ -37,7 +37,7 @@
       height: 48px;
       font-size: 0.9286rem;
       font-weight: 600;
-      line-height: 37px;
+      line-height: 2.643rem;
       color: white;
       text-indent: 1rem;
 
@@ -78,13 +78,13 @@
 @media (min-width: 768px) {
   .sign-in {
     padding: 60px 0;
-    background-image: url(../../images/photos/background_mobile_768.png);
+    background-image: url(../images/photos/background_mobile_768.png);
 
     &__title {
       display: inline-block;
       margin: 0 auto 30px;
       font-size: 1.571rem;
-      line-height: 38px;
+      line-height: 2.714rem;
       width: 574px;
     }
 
@@ -94,7 +94,7 @@
       width: 458px;
       margin: 0 auto;
       font-size: 1.071rem;
-      line-height: 20px;
+      line-height: 1.429rem;
     }
 
     &--orange + br {
@@ -117,7 +117,7 @@
 @media (min-width: 1280px) {
   .sign-in {
     padding: 86px 0;
-    background-image: url(../../images/photos/background_mobile_1280.png);
+    background-image: url(../images/photos/background_mobile_1280.png);
 
     &__wrapper {
       display: flex;
@@ -128,7 +128,7 @@
     &__title {
       margin: 0 auto 30px;
       font-size: 2.643rem;
-      line-height: 50px;
+      line-height: 3.571rem;
       width: 936px;
     }
 
@@ -136,7 +136,7 @@
       padding-bottom: 50px;
       width: 548px;
       font-size: 1.286rem;
-      line-height: 24px;
+      line-height: 1.714rem;
     }
 
     &__form {
@@ -144,7 +144,7 @@
         width: 602px;
         height: 72px;
         font-size: 1.429rem;
-        line-height: 37px;
+        line-height: 2.643rem;
         text-indent: 30px;
       }
 

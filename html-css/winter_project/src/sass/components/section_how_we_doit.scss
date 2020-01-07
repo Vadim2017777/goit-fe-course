@@ -7,7 +7,7 @@
   &__title {
     margin: 0 0 40px 0;
     font-size: 1.429rem;
-    line-height: 32px;
+    line-height: 2.286rem;
   }
 
   &__cards {
@@ -17,7 +17,7 @@
   &__item {
     padding: 30px 30px 0;
     min-height: 268px;
-    width: 290px;
+    flex-basis: 290px;
     text-align: center;
     box-shadow: 4px 6.928px 23.68px 8.32px rgba(29, 29, 27, 0.11);
     cursor: pointer;
@@ -41,8 +41,8 @@
     display: block;
     margin: 0;
     font-size: 0.9286rem;
+    line-height: 1.429rem;
     font-weight: 700;
-    line-height: 20px;
 
     &::after {
       display: block;
@@ -56,8 +56,8 @@
 
   &__text {
     font-size: 0.7857rem;
+    line-height: 1.429rem;
     font-weight: 400;
-    line-height: 20px;
     color: $secondary-grey-color;
   }
 
@@ -97,7 +97,7 @@
     &__title {
       margin: 0 0 40px 0;
       font-size: 1.857rem;
-      line-height: 33px;
+      line-height: 2.357rem;
       text-align: center;
     }
 
@@ -113,7 +113,7 @@
   }
 }
 
-@media (max-width: 1280px) {
+@media (max-width: 1279px) {
   .howwe-doit {
     &__item {
       &:not(:nth-last-child(-n + 2)) {
@@ -133,7 +133,7 @@
     &__title {
       margin: 0 0 30px 0;
       font-size: 3rem;
-      line-height: 62px;
+      line-height: 4.429rem;
       text-align: left;
     }
 
@@ -142,12 +142,11 @@
     }
 
     &__item {
-      padding: 30px 30px 28px;
-      min-height: 268px;
-      width: 392px;
+      padding: 38px 30px 28px;
+      min-height: 350px;
+      flex-basis: calc(97% / 3);
 
       &:not(:nth-last-child(-n + 3)) {
-        margin: 0;
         margin-bottom: 20px;
       }
     }
@@ -156,21 +155,34 @@
       width: 50px;
       height: 50px;
       fill: $primary-orange-color;
-      margin-bottom: 26px;
+      margin-bottom: 20px;
     }
 
     &__headline {
       display: block;
       margin: 0;
-      line-height: 26px;
+      line-height: 1.857rem;
       font-size: 1.286rem;
+
+      &::after {
+        margin: 12px auto;
+      }
     }
 
     &__text {
       font-size: 1.071rem;
+      margin: 0;
       font-weight: 400;
-      line-height: 32px;
+      line-height: 2.286rem;
       color: $secondary-grey-color;
+    }
+  }
+}
+
+@media (min-width: 1680px) {
+  .howwe-doit {
+    &__cards {
+      width: 1347px;
     }
   }
 }

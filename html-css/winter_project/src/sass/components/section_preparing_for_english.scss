@@ -1,20 +1,20 @@
 .preparing-for-english {
   margin-bottom: 50px;
-  background-image: url(../../images/photos/Shape_1.png);
+  background-image: url(../images/photos/Shape_1.png);
   background-size: 100% 526px;
   background-repeat: no-repeat;
 
   &__title {
     margin: 0 0 30px 0;
     font-size: 1.429rem;
-    line-height: 29px;
+    line-height: 2.071rem;
     font-weight: 800;
   }
 
   &__paragraph {
     margin: 0 0 36px 0;
     font-size: 1.071rem;
-    line-height: 20px;
+    line-height: 1.429rem;
     font-weight: 700;
 
     &--grey {
@@ -97,7 +97,7 @@
       margin: 0;
       font-size: 0.9286rem;
       font-weight: 700;
-      line-height: 20px;
+      line-height: 1.429rem;
     }
   }
 }
@@ -116,7 +116,7 @@
 
 @media (min-width: 768px) {
   .preparing-for-english {
-    background-image: url(../../images/photos/Shape_768px.png);
+    background-image: url(../images/photos/Shape_768px.png);
     background-size: 100% 370px;
     background-repeat: no-repeat;
     background-position: 100% 60px;
@@ -154,21 +154,21 @@
 
 @media (min-width: 1280px) {
   .preparing-for-english {
-    background-image: url(../../images/photos/Shape_1280px.png);
+    background-image: url(../images/photos/Shape_1280px.png);
     background-size: 100% 526px;
     background-repeat: no-repeat;
 
     &__title {
       margin: 0 0 30px 0;
       font-size: 3.429rem;
-      line-height: 58px;
+      line-height: 4.143rem;
       font-weight: 800;
     }
 
     &__paragraph {
       margin: 0 0 66px 0;
       font-size: 1.286rem;
-      line-height: 26px;
+      line-height: 1.857rem;
       font-weight: 700;
     }
 
@@ -188,9 +188,6 @@
     }
 
     &-group {
-      &__item {
-      }
-
       &__item-svg {
         width: 44px;
         height: 46px;

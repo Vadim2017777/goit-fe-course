@@ -1,5 +1,5 @@
 .our-program {
-  background-image: url(../../images/photos/Black_rectangle.jpg.png);
+  background-image: url(../images/photos/Black_rectangle.jpg.png);
 
   &__wrapper {
     text-align: center;
@@ -52,7 +52,7 @@
   &__title {
     margin: 0 0 34px;
     font-size: 1.429rem;
-    line-height: 33px;
+    line-height: 2.357rem;
     font-weight: 800;
     color: $primary-white-color;
   }
@@ -64,7 +64,7 @@
   &__headline {
     margin: 0 0 14px;
     font-size: 1.071rem;
-    line-height: 29px;
+    line-height: 2.071rem;
     font-weight: 700;
     color: $primary-white-color;
     text-transform: uppercase;
@@ -74,7 +74,7 @@
     display: inline-block;
     margin: 0 0 14px;
     font-size: 0.9286rem;
-    line-height: 29px;
+    line-height: 2.071rem;
     font-weight: 500;
     color: $primary-orange-color;
     width: 123px;
@@ -94,7 +94,7 @@
     margin: 0 0 14px;
     font-size: 0.7857rem;
     font-weight: 400;
-    line-height: 20px;
+    line-height: 1.429rem;
     color: $secondary-grey-color;
   }
 }
@@ -253,6 +253,16 @@
       width: 540px;
       left: -35px;
       bottom: -206px;
+    }
+  }
+}
+
+@media (min-width: 1680px) {
+  .our-program {
+    &__item {
+      &::after {
+        top: -62px;
+      }
     }
   }
 }
