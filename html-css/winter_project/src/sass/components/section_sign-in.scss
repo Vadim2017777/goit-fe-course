@@ -29,7 +29,7 @@
     flex-direction: column;
     align-items: center;
 
-    & input {
+    input {
       border: 1px solid white;
       background: transparent;
       margin-bottom: 20px;
@@ -50,7 +50,7 @@
       }
     }
 
-    & button {
+    button {
       border: 2px solid $primary-orange-color;
       padding: 15px 12px;
       outline: none;

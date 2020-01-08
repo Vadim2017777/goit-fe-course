@@ -1,4 +1,4 @@
-.main-problems {
+.details {
   background: url(../images/photos/Black_rectangle.jpg.png);
   background-repeat: no-repeat;
   padding-top: 54px;
@@ -64,7 +64,7 @@
 }
 
 @media (min-width: 768px) {
-  .main-problems {
+  .details {
     background-image: url(../images/photos/BG-fire_768.png);
     background-size: 100% 334px;
     background-repeat: no-repeat;
@@ -96,7 +96,7 @@
 }
 
 @media (max-width: 1279px) {
-  .main-problems {
+  .details {
     &__item {
       &:not(:nth-last-child(-n + 2)) {
         margin-bottom: 25px;
@@ -106,7 +106,7 @@
 }
 
 @media (min-width: 1280px) {
-  .main-problems {
+  .details {
     background-image: url(../images/photos/BG-fire_1280.png);
     background-size: 100% 86%;
     background-repeat: no-repeat;
@@ -149,7 +149,7 @@
 }
 
 @media (min-width: 1680px) {
-  .main-problems {
+  .details {
     &__title {
       font-size: 3rem;
       line-height: 4rem;

@@ -1,4 +1,4 @@
-.howwe-doit {
+.how-it {
   &__wrapper {
     padding-top: 42px;
     padding-bottom: 54px;
@@ -79,7 +79,7 @@
 }
 
 @media (max-width: 767px) {
-  .howwe-doit {
+  .how-it {
     &__item {
       &:not(:last-child) {
         margin-bottom: 16px;
@@ -89,7 +89,7 @@
 }
 
 @media (min-width: 768px) {
-  .howwe-doit {
+  .how-it {
     &__wrapper {
       padding-top: 72px;
     }
@@ -114,7 +114,7 @@
 }
 
 @media (max-width: 1279px) {
-  .howwe-doit {
+  .how-it {
     &__item {
       &:not(:nth-last-child(-n + 2)) {
         margin: 0;
@@ -125,7 +125,7 @@
 }
 
 @media (min-width: 1280px) {
-  .howwe-doit {
+  .how-it {
     &__wrapper {
       padding-top: 62px;
     }
@@ -180,7 +180,7 @@
 }
 
 @media (min-width: 1680px) {
-  .howwe-doit {
+  .how-it {
     &__cards {
       width: 1347px;
     }

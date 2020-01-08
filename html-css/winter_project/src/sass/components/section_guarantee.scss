@@ -1,4 +1,4 @@
-.we-guarantee {
+.guarantee {
   background-image: url(../images/photos/bg_we_guarantee.jpg);
   background-repeat: repeat-x;
   background-position: 100% -25%;
@@ -66,7 +66,7 @@
 }
 
 @media (min-width: 768px) {
-  .we-guarantee {
+  .guarantee {
     background-size: 100% 750px;
     background-position: 100% -18%;
 
@@ -80,7 +80,7 @@
 }
 
 @media (min-width: 1280px) {
-  .we-guarantee {
+  .guarantee {
     background-position: 100% -36%;
 
     &__title {
@@ -121,7 +121,7 @@
 }
 
 @media (min-width: 1680px) {
-  .we-guarantee {
+  .guarantee {
     background-position: 100% -56%;
   }
 }

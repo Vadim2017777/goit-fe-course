@@ -1,4 +1,4 @@
-.preparing-for-english {
+.how-to {
   margin-bottom: 50px;
   background-image: url(../images/photos/Shape_1.png);
   background-size: 100% 526px;
@@ -103,7 +103,7 @@
 }
 
 @media (max-width: 767px) {
-  .preparing-for-english {
+  .how-to {
     &-group {
       &__item {
         &:not(:last-child) {
@@ -115,7 +115,7 @@
 }
 
 @media (min-width: 768px) {
-  .preparing-for-english {
+  .how-to {
     background-image: url(../images/photos/Shape_768px.png);
     background-size: 100% 370px;
     background-repeat: no-repeat;
@@ -153,7 +153,7 @@
 }
 
 @media (min-width: 1280px) {
-  .preparing-for-english {
+  .how-to {
     background-image: url(../images/photos/Shape_1280px.png);
     background-size: 100% 526px;
     background-repeat: no-repeat;
@@ -219,7 +219,7 @@
 }
 
 @media (min-width: 1280px) {
-  .preparing-for-english {
+  .how-to {
     background-image: url(../images/photos/Shape_1680px.png);
     background-size: 100% 626px;
     background-repeat: no-repeat;
