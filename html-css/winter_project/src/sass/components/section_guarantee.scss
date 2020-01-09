@@ -122,11 +122,15 @@
 
 @media (min-width: 1680px) {
   .guarantee {
-    background-position: 100% -56%;
-  }
+    background-position: 100% -46%;
 
-  &__title {
-    font-size: 2.647rem;
-    line-height: 1.2;
+    &__title {
+      font-size: 2.647rem;
+      line-height: 1.2;
+    }
+
+    &__text {
+      font-size: 1.176rem;
+    }
   }
 }
