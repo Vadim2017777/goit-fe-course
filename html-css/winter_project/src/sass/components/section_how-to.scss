@@ -172,8 +172,10 @@
       font-weight: 700;
     }
 
-    &__paragraph > br {
-      display: none;
+    &__paragraph {
+      &--disp {
+        display: none;
+      }
     }
 
     &__button {
