@@ -314,3 +314,34 @@
     }
   }
 }
+
+@media (min-width: 1680px) {
+  .reviews {
+    margin-bottom: 100px;
+
+    &__title {
+      font-size: 2.647rem;
+    }
+
+    &__card-name {
+      font-size: 1.471rem;
+      line-height: 1.706rem;
+    }
+
+    &__card-desc {
+      font-size: 0.7059rem;
+      line-height: 1.143rem;
+      padding-bottom: 22px;
+    }
+
+    &__card-text {
+      font-size: 0.9412rem;
+      line-height: 1.706rem;
+    }
+
+    &__card-link {
+      font-size: 0.9412rem;
+      line-height: 1.706rem;
+    }
+  }
+}

@@ -263,13 +263,26 @@
       top: 149px;
     }
 
+    &__title {
+      padding-right: 0;
+      font-size: 2.647rem;
+      line-height: 1.2;
+      margin-bottom: 5.714rem;
+    }
+
+    &__text {
+      margin: 0 0 28px;
+      font-size: 1.059rem;
+      line-height: 1.706rem;
+    }
+
     &__item {
       &:last-child {
         width: 166px;
       }
 
       &::after {
-        top: -62px;
+        top: -55px;
       }
     }
 

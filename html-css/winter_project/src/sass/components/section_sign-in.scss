@@ -162,10 +162,24 @@
   .sign-in {
     &__title {
       width: 1054px;
+      font-size: 2.176rem;
+      line-height: 2.941rem;
     }
 
     &__text {
-      width: 580px;
+      width: 670px;
+      font-size: 1.471rem;
+      line-height: 2.176rem;
+    }
+
+    &__form {
+      & input {
+        width: 602px;
+        height: 72px;
+        font-size: 1.176rem;
+        line-height: 2.176rem;
+        text-indent: 30px;
+      }
     }
   }
 }

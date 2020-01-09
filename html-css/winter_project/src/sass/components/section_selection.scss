@@ -151,6 +151,15 @@
 
 @media (min-width: 1680px) {
   .selection {
+    &__title {
+      margin-bottom: 30px;
+      position: relative;
+      font-size: 2.647rem;
+      line-height: 3.647rem;
+      width: 100%;
+      text-align: center;
+    }
+
     &__list {
       padding: 75px 0 75px 104px;
       width: 1346px;
@@ -159,13 +168,25 @@
     }
 
     &__item {
+      font-size: 1.286rem;
+      line-height: 2.071rem;
+    }
+
+    &__item {
       width: 351px;
       width: calc(1138px / 3);
+      font-size: 1.176rem;
+
+      &::before {
+        font-size: 1.176rem;
+        line-height: 1.706rem;
+      }
     }
 
     &__text {
       display: block;
       width: 340px;
+      font-size: 1.176rem;
     }
   }
 }

@@ -209,21 +209,37 @@
 
       &__item {
         position: relative;
-        width: 300px;
+        width: 345px;
       }
 
       &__item-text {
         position: absolute;
         left: 82px;
+        font-size: 1.286rem;
+        line-height: 2rem;
       }
     }
   }
 }
 
-@media (min-width: 1280px) {
+@media (min-width: 1680px) {
   .how-to {
     background-image: url(../images/photos/Shape_1680px.png);
     background-size: 100% 626px;
     background-repeat: no-repeat;
+
+    &-group {
+      &__item {
+        position: relative;
+        width: 374px;
+      }
+
+      &__item-text {
+        position: absolute;
+        left: 82px;
+        font-size: 1.176rem;
+        line-height: 1.941rem;
+      }
+    }
   }
 }
