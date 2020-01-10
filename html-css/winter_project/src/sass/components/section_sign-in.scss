@@ -70,7 +70,7 @@
     color: $primary-orange-color;
   }
 
-  &--orange + br {
+  &__paragraph--disp {
     display: none;
   }
 }
@@ -101,7 +101,7 @@
       display: none;
     }
 
-    &--orange > br {
+    &__paragraph--disp {
       display: inline;
     }
 
@@ -134,7 +134,7 @@
 
     &__text {
       padding-bottom: 50px;
-      width: 477px;
+      width: 506px;
       font-size: 1.286rem;
       line-height: 1.714rem;
     }
@@ -167,7 +167,7 @@
     }
 
     &__text {
-      width: 670px;
+      width: 720px;
       font-size: 1.471rem;
       line-height: 2.176rem;
     }
