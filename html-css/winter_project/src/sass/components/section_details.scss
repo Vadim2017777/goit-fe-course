@@ -44,7 +44,7 @@
     &::before {
       display: block;
       counter-increment: V;
-      content: ' \2003\2003'' \00A0'counter(V, decimal-leading-zero);
+      content: '\2003\2003'counter(V, decimal-leading-zero);
       font-size: 0.9286rem;
       line-height: 2.071rem;
       font-weight: 500;
