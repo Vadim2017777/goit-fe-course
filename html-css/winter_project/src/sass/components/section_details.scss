@@ -21,7 +21,7 @@
 
   &__list {
     @extend %list;
-
+    counter-reset: V;
     background-color: #ffffff;
     padding-top: 22px;
     padding-left: 26px;
@@ -34,7 +34,7 @@
     font-size: 0.9286rem;
     line-height: 1.429rem;
     font-weight: 700;
-    counter-increment: V;
+
     margin-bottom: 25px;
 
     &:last-child {
@@ -43,6 +43,7 @@
 
     &::before {
       display: block;
+      counter-increment: V;
       content: ' \2003\2003'' \00A0'counter(V, decimal-leading-zero);
       font-size: 0.9286rem;
       line-height: 2.071rem;
@@ -135,7 +136,6 @@
       }
 
       &::before {
-        content: ' \2003\2003'counter(V, decimal-leading-zero);
         font-size: 1.429rem;
         line-height: 2.071rem;
       }
