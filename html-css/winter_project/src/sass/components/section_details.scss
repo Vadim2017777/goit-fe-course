@@ -59,7 +59,7 @@
     background-color: $primary-orange-color;
     left: 0;
     top: 13px;
-    width: 25px;
+    width: 20px;
     height: 2px;
   }
 }
@@ -144,6 +144,10 @@
     &__text {
       display: block;
       width: 270px;
+
+      &::before {
+        width: 26px;
+      }
     }
   }
 }
